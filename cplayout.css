@@ -5,7 +5,17 @@
 	}
 
 	/*cards*/
-
+.container{
+   background: -webkit-linear-gradient(140deg, #9eeaee 0.42%, #ffffff);
+	background: linear-gradient(140deg, #9eeaee 0.42%, #ffffff);  
+    margin-bottom:10px;
+}
+.container h1{
+    font-family: Helvetica;
+    text-decoration: none;
+    font-weight:bold;
+    color:rgb(66, 132, 190);
+}
 
 .flip-card {
   float: left;
@@ -16,6 +26,7 @@
   perspective: 1000px;
 	background-color: 
 		transparent;
+    
 }
 
 .flip-card-img {
@@ -38,6 +49,7 @@
 .flip-card h2 {
 	font-weight: 600;
 	font-size: 1.8em;
+    font-family: Helvetica;
 	color: grey;
 }
 
@@ -45,10 +57,12 @@
   color: grey;
   text-align: center;
   font-size: 1.5em;
+    font-family: Helvetica;
 }
 
 .flip-card p {
 	font-size: 1em;
+    font-family: Helvetica;
 }
 
 
@@ -619,6 +633,8 @@ main .footer{
 	text-decoration: none;
 	color:rgb(107, 75, 157);
 }
+
+
 
 
 
