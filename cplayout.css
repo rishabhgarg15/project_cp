@@ -454,40 +454,54 @@ main{
 	text-decoration: none;
 	font-family: helvetica;
 	padding-left: 20px;
+    background: -webkit-linear-gradient(140deg, #9eeaee 0.42%, #ffffff);
+	background: linear-gradient(140deg, #9eeaee 0.42%, #ffffff);
 }
 main h1{
-	
+	padding-top: 10px;
 	text-transform: uppercase;
-	text-decoration: underline;
+	text-decoration: none;
+    font-weight:bold;
 	font-size:2em;
-    color:blue;
+    color:rgb(66, 133, 201);
 }
 main h2{
-    text-decoration: underline;
-    color:rgb(34, 37, 221);
+    
+    font-family: Helvetica;
+    text-decoration: none;
+    font-weight:bold;
+    color:rgb(66, 132, 190);
     font-size:2em;
 }
 main p{
-    color:black;
+    color:rgb(107, 75, 157);
    	font-size: 1.3em;
+    font-family: 'Helvetica';
 }
 main .footer{
-    text-decoration: underline;
+    text-decoration: none;
+  
 }
 .left{
 	display: inline-block;
 	float:left;
 	width:46%;
+
 }
 .right{
 	display: block;
 	clear:both;
+	margin-bottom: 15px;
+    padding-bottom: 10px;
 }
 .right a{
 	font-size:1.25em;
 	padding-left: 10px;
 	font-style: italic;
 	text-decoration: none;
-	color:#;
+	color:rgb(107, 75, 157);
 }
+
+
+
 
