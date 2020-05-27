@@ -3,6 +3,90 @@
 	body{
 		background-color: white;
 	}
+
+	/*cards*/
+
+
+.flip-card {
+  float: left;
+  margin: 33px;
+  width: 100%;
+  max-width: 300px;
+  height: 350px;
+  perspective: 1000px;
+	background-color: 
+		transparent;
+}
+
+.flip-card-img {
+	height: 250px;
+	overflow: hidden;
+	background-color: gray;
+}
+
+.flip-card-text {
+	height: 100px;
+	overflow: hidden;
+	background-color: black;
+}
+
+.flip-card img {
+	width: 100%;
+}
+
+
+.flip-card h2 {
+	font-weight: 600;
+	font-size: 1.8em;
+	color: grey;
+}
+
+.flip-card p.title {
+  color: grey;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.flip-card p {
+	font-size: 1em;
+}
+
+
+
+.flip-card:hover 
+{
+  opacity:0.6;
+}
+
+.flip-card-front a, 
+.flip-card-back a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+
+.flip-card-front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility:
+		hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  color: black;
+	border: 
+		5px solid lightgray;
+	background-color: white;
+}
+
+
+
+
+	/*cards ends*/
+
 	.form-control {
 		box-shadow: none;		
 		font-weight: normal;
@@ -71,6 +155,50 @@
         color: #a0a5b1;
 		font-size: 19px;
     }
+    .works {
+  padding: 80px 0;
+  background: #FCFCFC;
+}
+.works .block {
+  position: relative;
+  z-index: 99;
+}
+.works .block:hover .img-overly .overly {
+  opacity: 1;
+}
+.works .block h4 {
+  padding: 20px 15px;
+  margin-top: 0;
+  color: #666;
+}
+.works .block .img-overly {
+  position: relative;
+  background: rgba(0, 0, 0, 0.85);
+}
+.works .block .img-overly img {
+  border-radius: 0;
+}
+.works .block .img-overly .overly {
+  background: rgba(57, 181, 74, 0.9);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  -webkit-transition: .3s all;
+  -o-transition: .3s all;
+  transition: .3s all;
+}
+.works .block .img-overly .overly a {
+  position: absolute;
+  top: 45%;
+  left: 22%;
+}
+.works .block .img-overly .overly a i {
+  font-size: 30px;
+  color: #fff;
+}
 	.navbar .nav .btn-primary, .navbar .nav .btn-primary:active {
 		color: #fff;
 		background: #33cabb;
@@ -239,16 +367,6 @@
   font-family: Open Sans;
 }
 
-section {
-  width: 100%;
-  display: inline-block;
-  background: white;
-  height: 100vh;
-  text-align: center;
-  font-size: 22px;
-  font-weight: 700;
-  text-decoration: underline;
-}
 
 .footer-distributed{
 	background: #666;
