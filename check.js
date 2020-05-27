@@ -50,7 +50,11 @@ function check(){
 	}
 	
 
-	swal("Correct Answers  : " +count);
+	Swal.fire({
+		title:"Correct Answers  : " +count,
+		width:'800px',
+		
+	});
 	
 
 }
