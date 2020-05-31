@@ -76,15 +76,27 @@ const authCheck = (req, res, next) => {
     }
 };
 
+const verifyAdmin=function(req,res,next){
+ if(req.user.admin)
+     {
+     next();
+     }
+    else
+        {
+         req.flash("error","You are not allowed to do this operation!"); 
+             res.redirect('/');
+        }
+};
 
 
-app.get('/upload', authCheck, (req, res) => {
+
+app.get('/upload', authCheck,verifyAdmin, (req, res) => {
     res.render('upload',{ user: req.user });
 });
 
 
 
-app.post("/upload",authCheck,function(req,res){
+app.post("/upload",authCheck,verifyAdmin,function(req,res){
 	if(req.files){
 		var file=req.files.filename,
 			name=file.name;

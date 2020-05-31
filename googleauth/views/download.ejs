@@ -15,9 +15,13 @@
 
     </iframe>
     <a class="btn btn-lg btn-primary" href="/<%=file.fname%>" download="<%=file.fname%>">Download File</a>
-    <form action="/delete/<%=file._id%>/<%=file.fname%>?_method=delete" method="post">
+      <% if(user&&user.admin) {%>    
+       <form action="/delete/<%=file._id%>/<%=file.fname%>?_method=delete" method="post">
     	<button class="btn btn-lg btn-danger">Delete file</button>
     </form>
+    
+    <% } %>
+    
   </div>
 </div>
 
