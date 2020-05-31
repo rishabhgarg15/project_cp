@@ -596,6 +596,13 @@ main h1{
     font-weight:bold;
 	font-size:2em;
     color:rgb(66, 133, 201);
+    transition-property: color;
+    transition-delay: 0.5s;
+    transition-timing-function: linear;
+    transition-duration: 0.5s;
+}
+main h1:hover{
+    color:rgb(155, 58, 155);
 }
 main h2{
     
@@ -604,11 +611,25 @@ main h2{
     font-weight:bold;
     color:rgb(66, 132, 190);
     font-size:2em;
+    transition-property: color;
+    transition-delay: 0.25s;
+    transition-timing-function: linear;
+    transition-duration: 0.25s;
+}
+main h2:hover{
+    color:rgb(55, 70, 147);
 }
 main p{
     color:rgb(107, 75, 157);
    	font-size: 1.3em;
     font-family: 'Helvetica';
+    transition-property: color;
+    transition-delay: 0.25s;
+    transition-timing-function: linear;
+    transition-duration: 0.25s;
+}
+main p:hover{
+    color:rgb(42, 131, 95);
 }
 main .footer{
     text-decoration: none;
@@ -632,7 +653,17 @@ main .footer{
 	font-style: italic;
 	text-decoration: none;
 	color:rgb(107, 75, 157);
+    transition-property: color,font-size;
+    transition-delay: 0.25s;
+    transition-timing-function: linear;
+    transition-duration: 0.25s;
 }
+.right a:hover{
+    color:rgb(42, 131, 95);
+    font-size:1.4em;
+}
+
+
 
 
 
