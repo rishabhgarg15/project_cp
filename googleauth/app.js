@@ -83,20 +83,22 @@ const verifyAdmin=function(req,res,next){
      }
     else
         {
-         req.flash("error","You are not allowed to do this operation!"); 
+         req.flash("error","You are not allowed to do this operation!");
              res.redirect('/');
         }
 };
 
+app.use('/upload',authCheck,verifyAdmin);
+app.use('/delete',authCheck,verifyAdmin);
 
 
-app.get('/upload', authCheck,verifyAdmin, (req, res) => {
+app.get('/upload', (req, res) => {
     res.render('upload',{ user: req.user });
 });
 
 
 
-app.post("/upload",authCheck,verifyAdmin,function(req,res){
+app.post("/upload",function(req,res){
 	if(req.files){
 		var file=req.files.filename,
 			name=file.name;
