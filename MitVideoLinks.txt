@@ -1,0 +1,131 @@
+/* MIT Open Courseware */
+Classical Mecahanics:
+
+1.) Introduction - https://youtu.be/wWnfJ0-xXRE
+
+2.) Lect 1 - Powers of 10, Units, Dimensions, Uncertainties, Scaling Arguments - 
+https://youtu.be/GtOGurrUPmQ
+
+3.) Lect 2 - 1D Kinematics - Speed, Velocity, Acceleration- 
+https://youtu.be/q9IWoQ199_o
+
+4.) Lect 3 - Vectors - Dot Products - Cross Products - 3D Kinematics-
+https://youtu.be/0na1JdPE_JY
+
+5.) Lect 4 - 3D Kinematics, Free Falling Reference Frames-
+https://youtu.be/k6aJyOHTDYM
+
+6.) Lect 5 - Circular Motion, Centripetal Forces, Perceived Gravity-
+https://youtu.be/mWj1ZEQTI8I
+
+7.)Lect 6 - Newton's Laws-
+https://youtu.be/oduZsA0Tk58
+
+8.) Lect 7 - Weight, Weightlessness in Free Fall, Weight in Orbit-
+https://youtu.be/Z07tTuE1mwk
+
+9.) Lect 8 - Friction-
+https://youtu.be/FWh-enOdXM4
+
+10.) Lect 9 - First Exam Review-
+https://youtu.be/pjsV9Ccqhi4
+
+11.)  Lect 10 - Hooke's Law, Springs, Pendulums, Simple Harmonic Motion-
+https://youtu.be/tNpuTx7UQbw
+
+
+12.) Lect 11 - Work, Kinetic & Potential Energy, Gravitation, Conservative Forces-
+https://youtu.be/9gUdDM6LZGo
+
+13.)  Lect 12 - Air Drag, Resistive Forces, Conservative Forces, Terminal Velocity-
+https://youtu.be/djCCno4Cbcw
+
+14.)  Lect 13 - Potential Energy, Derive Simple Harmonic Motion using Energy-
+https://youtu.be/9ta5ul9x6WE
+
+
+15.) Escape Velocities, Circular Orbits, Bound and Unbound Orbits, Power-
+https://youtu.be/3fTVn96gUSQ
+
+
+16.) Lect 15 - Momentum, Conservation of Momentum, Center of Mass-
+https://youtu.be/aIhScO3_I50
+
+17.)  Lect 16 - Elastic & Inelastic Collisions, Center of Mass Frame of Reference-
+https://youtu.be/-q-WiX-KVXo
+
+
+18.) Lect 17 - Impulse, Rockets-
+https://youtu.be/BBYLiF_R0Xs
+
+19.) Lect 18 - 2nd Exam Review-
+https://youtu.be/DcblYQPTMj0
+ 
+
+20.) Lect 19 - Rotating Objects, Moment of Inertia, Rotational KE, Neutron Stars-
+https://youtu.be/fDJeVR0o__w
+
+21.) Lect 20 - Angular Momentum, Torques, Conservation of Angular Momentum-
+https://youtu.be/sNaaL19opxw
+
+22.)  Lect 21 - Torques, Oscillating Bodies, Physical Pendulums-
+https://youtu.be/4Mw6oD1MnKg
+
+
+23.) Lect 22 - Kepler's Laws, Elliptical Orbits, Satellites, Orbital Changes-
+https://youtu.be/9wDAm-dlht4
+
+
+24.) Lect 23 - Doppler Effect, Binary Stars, Neutron Stars & Black Holes-
+https://youtu.be/313C1zo9pyE
+
+25.) Lect 24 - Rolling Motion, Gyroscopes, VERY NON-INTUITIVE-
+https://youtu.be/XPUuF_dECVI
+
+26.)  Lect 25 - Static Equilibrium, Stability, Rope Warker-
+https://youtu.be/0NegJkO_ZM4
+
+
+27.) Lect 26 - Elasticity, Young's Modulus-
+https://youtu.be/ifri4c0luz8
+
+
+28.) Lect 27 - Fluid Mechanics, Hydrostatics, Pascal's Principle, Atmosph. Pressure-
+https://youtu.be/O_HQklhIlwQ
+
+
+29.) Lect 28 - Hydrostatics, Archimedes' Principle, Bernoulli's Equation-
+https://youtu.be/JR-L2CS8DGc
+
+
+30.) Lect 29 - Third Exam Review-
+https://youtu.be/vNXBJLV4Ga4
+
+31.) Lect 30 - Simple Harmonic Motion, Energy Considerations, Torsional Pendulum-
+https://youtu.be/hAYeA3Wwb4U
+
+32.) Lect 31 - Forced Oscillations, Normal Modes, Resonances, Musical Instruments-
+https://youtu.be/QwgDxQ9o1XQ
+
+
+
+33.)  Lect 32 - Heat, Thermal Expansion-
+https://youtu.be/mAAvp5YzWxk
+
+
+
+34.) Lect 33 - Kinetic Gas Theory, Ideal Gas Law, Phase Transitions-
+https://youtu.be/husWiBtkROQ
+
+
+
+35.) Lect 34 - The Wonderful Quantum World, Breakdown of Classical Mechanics-
+https://youtu.be/Eg13TQNgasE
+
+36.) Lect 35 - Farewell Special, My Early Days in Astrophysics, Huge Balloons-
+https://youtu.be/N8p36i2BNOE
+
+37.)
+
+
+38.)
