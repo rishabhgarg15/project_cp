@@ -1,4 +1,4 @@
-const express = require('express');
+var express = require('express');
 const cookieSession = require('cookie-session');
 const passport = require('passport');
 const authRoutes = require('./routes/authroutes');
