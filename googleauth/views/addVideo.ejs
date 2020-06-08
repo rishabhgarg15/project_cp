@@ -1,0 +1,35 @@
+<%- include('partials/header') %>
+
+<title>Write title for each page here</title>
+
+<!-- Here you we will include other css and js files that are not to be used for every age -->
+
+</head>
+<body>
+
+<%- include('partials/navbar') %>
+	
+
+
+	<h1>Add New Video Link</h1>
+	<form method="post" action="/addVideo">
+		<input type="text" name="videolink" placeholder="link of video" required>
+		
+		<input type="text" name="showname" placeholder="Write display name for this video" required>
+
+		<select id="fieldnames" name="field_val">
+		<option val="chapter1">Chapter1</option>
+		<option val="chapter2">Chapter2</option>
+		<option val="chapter3">Chapter3</option>
+		</select>
+		
+		<input type="submit" value="submit">
+	</form>	
+
+
+
+
+
+		<section>This is used to make page to cover full page otherwise footer not be at end , As content is not placed till now. We will remove it afterwards.</section>
+
+<%- include('partials/footer') %>

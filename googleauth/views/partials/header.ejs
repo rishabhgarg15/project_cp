@@ -1,118 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Home Page</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="/public/stylesheet/navfoot.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-	<style type="text/css">
-
-
-		body{
-		background: #f5d9d5;
-		font-family: Nunito;
-		font-size: 2rem;
-	}
-
-		
-					#nav_bar{
-			    font-size:1.5rem;
-				font-weight: 100;
-			}
-
-			#nav_bar .nav-link{
-				color: red;
-			}
-
-
-			#nav_bar .nav-link:hover{
-				color: #EA1c2c;
-			}
-
-			#nav_bar .navbar-brand{
-				color: #EA1c2c;
-				font-size:1.5rem;
-				font-weight: 100;
-				 
-			}
-
-			h1 {
-				color: #EA1c2c;
-				margin-top: 10%;
-				text-align: center;	
-			}
-
-
-
-			img {
-				width: 500px;
-				height: 500px;
-			}
-
-
-			 main, header{
-                max-width: 960px;
-                margin: 30px auto;
-                padding: 0 10px;
-                color: #333;
-            }
-            main img{
-                width: 40px;
-                height: 40px;
-                margin-right: 10px;
-                position: relative;
-                top: 12px;
-            }
-            main p{
-                display: inline-block;
-            }	
-</style>
-
-
-
-</head>
-<body>
-
-
-	<nav id="nav_bar" class="navbar navbar-dark  navbar-expand-md py-0 fixed-top">
-	<a class="navbar-brand" href="/">Home</a>
-	<a class="navbar-brand" href="/profile">Profile</a>
-
-			<ul class="navbar-nav">
-			<% if (user) { %>
-			<li class="navbar-item">
-				<a class="nav-link" href="/auth/logout">Logout</a>				
-			</li>
-			<% } else { %>
-
-			<li class="navbar-item">
-				<a class="nav-link" href="/auth/login">Login</a>				
-			</li>
-				 <% } %>
-
-
-		</ul>
-	
-	</nav>
-<div class="container mt-5">
-    <% if(error && error.length > 0) {%>
-    <div class="alert alert-danger" role="alert">
-         <%=error%> 
-    </div>
-    <% } %>
-
-    <% if(success && success.length > 0) {%>    
-    <div class="alert alert-success" role="alert">
-        <%=success%>  
-    </div>
-    <% } %>
-
-	</div>
-
-</div>
-
+<script type="text/javascript">
+	// Prevent dropdown menu from closing when click inside the form
+	$(document).on("click", ".navbar-right .dropdown-menu", function(e){
+		e.stopPropagation();
+	});
+</script>

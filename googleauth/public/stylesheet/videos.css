@@ -1,0 +1,190 @@
+.videom{
+
+      padding-bottom: 12px; 
+
+  }
+
+  	body{
+		background-color: white;
+	}
+
+	/*cards*/
+.container{
+   background: -webkit-linear-gradient(140deg, #9eeaee 0.42%, #ffffff);
+	background: linear-gradient(140deg, #9eeaee 0.42%, #ffffff);  
+    margin-bottom:10px;
+}
+.container h1{
+    font-family: Helvetica;
+    text-decoration: none;
+    font-weight:bold;
+    color:rgb(66, 132, 190);
+}
+
+.flip-card {
+  float: left;
+  margin: 33px;
+  width: 100%;
+  max-width: 300px;
+  height: 350px;
+  perspective: 1000px;
+	background-color: 
+		transparent;
+    
+}
+
+.flip-card-img {
+	height: 250px;
+	overflow: hidden;
+	background-color: gray;
+}
+
+.flip-card-text {
+	height: 100px;
+	overflow: hidden;
+	background-color: black;
+}
+
+.flip-card img {
+	width: 100%;
+}
+
+
+.flip-card h2 {
+	font-weight: 600;
+	font-size: 1.8em;
+    font-family: Helvetica;
+	color: grey;
+}
+
+.flip-card p.title {
+  color: grey;
+  text-align: center;
+  font-size: 1.5em;
+    font-family: Helvetica;
+}
+
+.flip-card p {
+	font-size: 1em;
+    font-family: Helvetica;
+}
+
+
+
+.flip-card:hover 
+{
+  opacity:0.6;
+}
+
+.flip-card-front a, 
+.flip-card-back a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+
+.flip-card-front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility:
+		hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  color: black;
+	border: 
+		5px solid lightgray;
+	background-color: white;
+}
+
+
+/*Cards Over*/
+
+
+
+
+main{
+	text-align: left;
+	text-decoration: none;
+	font-family: helvetica;
+	padding-left: 20px;
+    background: -webkit-linear-gradient(140deg, #9eeaee 0.42%, #ffffff);
+	background: linear-gradient(140deg, #9eeaee 0.42%, #ffffff);
+}
+main h1{
+	padding-top: 10px;
+	text-transform: uppercase;
+	text-decoration: none;
+    font-weight:bold;
+	font-size:2em;
+    color:rgb(66, 133, 201);
+    transition-property: color;
+    transition-delay: 0.5s;
+    transition-timing-function: linear;
+    transition-duration: 0.5s;
+}
+main h1:hover{
+    color:rgb(155, 58, 155);
+}
+main h2{
+    
+    font-family: Helvetica;
+    text-decoration: none;
+    font-weight:bold;
+    color:rgb(66, 132, 190);
+    font-size:2em;
+    transition-property: color;
+    transition-delay: 0.25s;
+    transition-timing-function: linear;
+    transition-duration: 0.25s;
+}
+main h2:hover{
+    color:rgb(55, 70, 147);
+}
+main p{
+    color:rgb(107, 75, 157);
+   	font-size: 1.3em;
+    font-family: 'Helvetica';
+    transition-property: color;
+    transition-delay: 0.25s;
+    transition-timing-function: linear;
+    transition-duration: 0.25s;
+}
+main p:hover{
+    color:rgb(42, 131, 95);
+}
+main .footer{
+    text-decoration: none;
+  
+}
+.left{
+	display: inline-block;
+	float:left;
+	width:46%;
+
+}
+.right{
+	display: block;
+	clear:both;
+	margin-bottom: 15px;
+    padding-bottom: 10px;
+}
+.right a{
+	font-size:1.25em;
+	padding-left: 10px;
+	font-style: italic;
+	text-decoration: none;
+	color:rgb(107, 75, 157);
+    transition-property: color,font-size;
+    transition-delay: 0.25s;
+    transition-timing-function: linear;
+    transition-duration: 0.25s;
+}
+.right a:hover{
+    color:rgb(42, 131, 95);
+    font-size:1.4em;
+}
+
