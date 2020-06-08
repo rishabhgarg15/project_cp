@@ -1,0 +1,36 @@
+<%- include('partials/header') %>
+
+	<h1>Download Files</h1>
+
+	
+<!--Grid column-->
+  <div class="col-lg-6 col-md-12">
+
+<% files.forEach(function(file){ %>
+<div id="Iframe-Cicis-Menu-To-Go" class="set-margin-cicis-menu-to-go set-padding-cicis-menu-to-go set-border-cicis-menu-to-go set-box-shadow-cicis-menu-to-go center-block-horiz">
+  <div class="responsive-wrapper 
+     responsive-wrapper-padding-bottom-90pct"
+     style="-webkit-overflow-scrolling: touch; overflow: auto;">
+     <iframe src="/<%=file.fname%>">
+
+    </iframe>
+    <a class="btn btn-lg btn-primary" href="/<%=file.fname%>" download="<%=file.fname%>">Download File</a>
+      <% if(user&&user.admin) {%>    
+       <form action="/delete/<%=file._id%>/<%=file.fname%>?_method=delete" method="post">
+    	<button class="btn btn-lg btn-danger">Delete file</button>
+    </form>
+    
+    <% } %>
+    
+  </div>
+</div>
+
+
+<%  }) %>
+
+
+  </div>
+
+
+
+<%- include('partials/footer') %>

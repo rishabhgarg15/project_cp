@@ -10,11 +10,29 @@
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,200,500,600,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- CSS only -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
     <link rel="stylesheet" href="card.css">
-    <link rel="stylesheet" href="cplayout.css">
-<link rel="stylesheet/less" type="text/css" href="card.less" />
-<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js" ></script>
-    <script type="text/javascript" src="card.js"></script>    
+    <link rel="stylesheet" href="cardlayout.css">
+    <link rel="stylesheet" href="c.css">
+
+
+
+
+
+
+
+    <link rel="stylesheet/less" href="card.less" type="text/css" />
+<script src="https://raw.githubusercontent.com/less/less.js/master/dist/less.min.js"></script>
     <style type="text/css">
   
 
@@ -27,6 +45,12 @@
             position: relative;
             min-height: 100%;
         }
+body{
+
+  background-color: black;
+}
+
+
 </style>
 
 <script type="text/javascript">
@@ -40,8 +64,12 @@
 
 
 
+
+
 </head>
 <body>
+
+
 
 
 <nav class="navbar navbar-default navbar-expand-lg navbar-light navbar-fixed-top">
@@ -134,12 +162,32 @@
 
 
 
+
+<script>
+  $('#monitor').html($(window).width());
+
+$(window).resize(function() {
+    var viewportWidth = $(window).width();
+    $('#monitor').html(viewportWidth);
+});
+</script>
+
 <section class="container">
     <div class="page-header">
-        <h1  class="mn">MEET THE TEAM</h1>
+ 
+<div class="container">
+              <div class="skills">
+    <hr class="hr-text" data-content="MEET THE TEAM" style="font-size: x-large;"></div>
+  </div>
+  <div class="container-fluid">
+  Current viewport width:<span id="monitor"></span>
+</div>
+
+
+
     </div>
     <div class="row active-with-click">
-        <div class="col-md-4 col-sm-6 col-xs-12">
+       <div class="col-md-4 col-sm-6 col-xs-12">
             <article class="material-card Red">
                 <h2>
                     <span>Christopher Walken</span>
@@ -170,7 +218,7 @@
                 </div>
             </article>
         </div>
-          <div class="col-md-4 col-sm-6 col-xs-12">
+         <div class="col-md-4 col-sm-6 col-xs-12">
             <article class="material-card Red">
                 <h2>
                     <span>Christopher Walken</span>
@@ -201,7 +249,7 @@
                 </div>
             </article>
         </div>
-          <div class="col-md-4 col-sm-6 col-xs-12">
+         <div class="col-md-4 col-sm-6 col-xs-12">
             <article class="material-card Red">
                 <h2>
                     <span>Christopher Walken</span>
@@ -232,7 +280,7 @@
                 </div>
             </article>
         </div>
-          <div class="col-md-4 col-sm-6 col-xs-12">
+         <div class="col-md-4 col-sm-6 col-xs-12">
             <article class="material-card Red">
                 <h2>
                     <span>Christopher Walken</span>
@@ -263,7 +311,7 @@
                 </div>
             </article>
         </div>
-          <div class="col-md-4 col-sm-6 col-xs-12">
+         <div class="col-md-4 col-sm-6 col-xs-12">
             <article class="material-card Red">
                 <h2>
                     <span>Christopher Walken</span>
@@ -294,7 +342,7 @@
                 </div>
             </article>
         </div>
-          <div class="col-md-4 col-sm-6 col-xs-12">
+         <div class="col-md-4 col-sm-6 col-xs-12">
             <article class="material-card Red">
                 <h2>
                     <span>Christopher Walken</span>
@@ -325,7 +373,7 @@
                 </div>
             </article>
         </div>
-          <div class="col-md-4 col-sm-6 col-xs-12">
+         <div class="col-md-4 col-sm-6 col-xs-12">
             <article class="material-card Red">
                 <h2>
                     <span>Christopher Walken</span>
@@ -356,7 +404,7 @@
                 </div>
             </article>
         </div>
-          <div class="col-md-4 col-sm-6 col-xs-12">
+         <div class="col-md-4 col-sm-6 col-xs-12">
             <article class="material-card Red">
                 <h2>
                     <span>Christopher Walken</span>
@@ -387,7 +435,7 @@
                 </div>
             </article>
         </div>
-          <div class="col-md-4 col-sm-6 col-xs-12">
+         <div class="col-md-4 col-sm-6 col-xs-12">
             <article class="material-card Red">
                 <h2>
                     <span>Christopher Walken</span>
@@ -418,7 +466,38 @@
                 </div>
             </article>
         </div>
-        
+         <div class="col-md-4 col-sm-6 col-xs-12">
+            <article class="material-card Red">
+                <h2>
+                    <span>Christopher Walken</span>
+                    <strong>
+                        <i class="fa fa-fw fa-star"></i>
+                        The Deer Hunter
+                    </strong>
+                </h2>
+                <div class="mc-content">
+                    <div class="img-container">
+                        <img class="img-responsive" src="http://u.lorenzoferrara.net/marlenesco/material-card/thumb-christopher-walken.jpg">
+                    </div>
+                    <div class="mc-description">
+                        He has appeared in more than 100 films and television shows, including The Deer Hunter, Annie Hall, The Prophecy trilogy, The Dogs of War ...
+                    </div>
+                </div>
+                <a class="mc-btn-action">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <div class="mc-footer">
+                    <h4>
+                        Social
+                    </h4>
+                    <a class="fa fa-fw fa-facebook"></a>
+                    <a class="fa fa-fw fa-twitter"></a>
+                    <a class="fa fa-fw fa-linkedin"></a>
+                    <a class="fa fa-fw fa-google-plus"></a>
+                </div>
+            </article>
+        </div>
+       
     </div>
 </section>
 
@@ -484,9 +563,11 @@
 
         </footer>
 
-<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+  
+
 <script src="jquery.material-cards.min.js"></script>
-<script src="jquery.material-cards.min.js"></script>
+
 <script>
     $(function() {
         $('.material-card').materialCard({
