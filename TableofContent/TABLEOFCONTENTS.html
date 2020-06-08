@@ -1,0 +1,1274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>NOTES</title>
+<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
+
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+ 
+
+
+
+
+     
+
+
+<style type="text/css">
+
+
+	/*
+   general styles
+*/
+
+	body{
+		font-family: 'Varela Round', sans-serif;
+		
+
+	}
+
+	a:link {
+  			color: red;
+  			text-decoration: underline;
+  		}
+
+  
+
+	.form-control {
+		box-shadow: none;		
+		font-weight: normal;
+		font-size: 13px;
+	}
+	.form-control:focus {
+		border-color: #33cabb;
+		box-shadow: 0 0 8px rgba(0,0,0,0.1);
+	}
+	.navbar-header.col {
+		padding: 0 !important;
+	}	
+	.navbar {
+		background: #fff;
+		padding-left: 16px;
+		padding-right: 16px;
+		border-bottom: 1px solid #dfe3e8;
+		border-radius: 0;
+	}
+	.nav-link img {
+		border-radius: 50%;
+		width: 36px;
+		height: 36px;
+		margin: -8px 0;
+		float: left;
+		margin-right: 10px;
+	}
+	.navbar .navbar-brand, .navbar .navbar-brand:hover, .navbar .navbar-brand:focus {
+		padding-left: 0;
+		font-size: 20px;
+		padding-right: 50px;
+	}
+	.navbar .navbar-brand b {
+		font-weight: bold;
+		color: #33cabb;		
+	}
+	.navbar .form-inline {
+        display: inline-block;
+    }
+	.navbar .nav li {
+		position: relative;
+	}
+	.navbar .nav li a {
+		color: #888;
+	}
+	.search-box {
+        position: relative;
+    }	
+    .search-box input {
+        padding-right: 35px;
+		border-color: #dfe3e8;
+        border-radius: 4px !important;
+		box-shadow: none
+    }
+	.search-box .input-group-addon {
+        min-width: 35px;
+        border: none;
+        background: transparent;
+        position: absolute;
+        right: 0;
+        z-index: 9;
+        padding: 7px;
+		height: 100%;
+    }
+    .search-box i {
+        color: #a0a5b1;
+		font-size: 19px;
+    }
+	.navbar .nav .btn-primary, .navbar .nav .btn-primary:active {
+		color: #fff;
+		background: #33cabb;
+		padding-top: 8px;
+		padding-bottom: 6px;
+		vertical-align: middle;
+		border: none;
+	}	
+	.navbar .nav .btn-primary:hover, .navbar .nav .btn-primary:focus {		
+		color: #fff;
+		outline: none;
+		background: #31bfb1;
+	}
+	.navbar .navbar-right li:first-child a {
+		padding-right: 30px;
+	}
+	.navbar .nav-item i {
+		font-size: 18px;
+	}
+	.navbar .dropdown-item i {
+		font-size: 16px;
+		min-width: 22px;
+	}
+	.navbar ul.nav li.active a, .navbar ul.nav li.open > a {
+		background: transparent !important;
+	}	
+	.navbar .nav .get-started-btn {
+		min-width: 120px;
+		margin-top: 8px;
+		margin-bottom: 8px;
+	}
+	.navbar ul.nav li.open > a.get-started-btn {
+		color: #fff;
+		background: #31bfb1 !important;
+	}
+	.navbar .dropdown-menu {
+		border-radius: 1px;
+		border-color: #e5e5e5;
+		box-shadow: 0 2px 8px rgba(0,0,0,.05);
+	}
+	.navbar .nav .dropdown-menu li {
+		color: #999;
+		font-weight: normal;
+	}
+	.navbar .nav .dropdown-menu li a, .navbar .nav .dropdown-menu li a:hover, .navbar .nav .dropdown-menu li a:focus {
+		padding: 8px 20px;
+		line-height: normal;
+	}
+	.navbar .navbar-form {
+		border: none;
+	}
+	.navbar .dropdown-menu.form-wrapper {
+		width: 280px;
+		padding: 20px;
+		left: auto;
+		right: 0;
+        font-size: 14px;
+	}
+	.navbar .dropdown-menu.form-wrapper a {		
+		color: #33cabb;
+		padding: 0 !important;
+	}
+	.navbar .dropdown-menu.form-wrapper a:hover{
+		text-decoration: underline;
+	}
+	.navbar .form-wrapper .hint-text {
+		text-align: center;
+		margin-bottom: 15px;
+		font-size: 13px;
+	}
+	.navbar .form-wrapper .social-btn .btn, .navbar .form-wrapper .social-btn .btn:hover {
+		color: #fff;
+        margin: 0;
+		padding: 0 !important;
+		font-size: 13px;
+		border: none;
+		transition: all 0.4s;
+		text-align: center;
+		line-height: 34px;
+		width: 47%;
+		text-decoration: none;
+    }	
+	.navbar .social-btn .btn-primary {
+		background: #507cc0;
+	}
+	.navbar .social-btn .btn-primary:hover {
+		background: #4676bd;
+	}
+	.navbar .social-btn .btn-info {
+		background: #64ccf1;
+	}
+	.navbar .social-btn .btn-info:hover {
+		background: #4ec7ef;
+	}
+	.navbar .social-btn .btn i {
+		margin-right: 5px;
+		font-size: 16px;
+		position: relative;
+		top: 2px;
+	}
+	.navbar .form-wrapper .form-footer {
+		text-align: center;
+		padding-top: 10px;
+		font-size: 13px;
+	}
+	.navbar .form-wrapper .form-footer a:hover{
+		text-decoration: underline;
+	}
+	.navbar .form-wrapper .checkbox-inline input {
+		margin-top: 3px;
+	}
+	.or-seperator {
+        margin-top: 32px;
+		text-align: center;
+		border-top: 1px solid #e0e0e0;
+    }
+    .or-seperator b {
+		color: #666;
+        padding: 0 8px;
+		width: 30px;
+		height: 30px;
+		font-size: 13px;
+		text-align: center;
+		line-height: 26px;
+		background: #fff;
+		display: inline-block;
+		border: 1px solid #e0e0e0;
+		border-radius: 50%;
+		position: relative;
+		top: -15px;
+		z-index: 1;
+    }
+    .navbar .checkbox-inline {
+		font-size: 13px;
+	}
+	.navbar .navbar-right .dropdown-toggle::after {
+		display: none;
+	}
+	@media (min-width: 1200px){
+		.form-inline .input-group {
+			width: 300px;
+			margin-left: 30px;
+		}
+	}
+	@media (max-width: 768px){
+		.navbar .dropdown-menu.form-wrapper {
+			width: 100%;
+			padding: 10px 15px;
+			background: transparent;
+			border: none;
+		}
+		.navbar .form-inline {
+			display: block;
+		}
+		.navbar .input-group {
+			width: 100%;
+		}
+		.navbar .nav .btn-primary, .navbar .nav .btn-primary:active {
+			display: block;
+		}
+	}
+
+	@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+
+* {
+  font-family: Open Sans;
+}
+
+
+.footer-distributed{
+	background: #666;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Open Sans', cursive;
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+	color:  lightseagreen;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+  font-weight:400;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #222;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+  font-weight:400;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  lightseagreen;
+	text-decoration: none;;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}
+.want{
+	height: 120px;
+}
+
+.ok{
+
+	font-size: xx-large;
+}
+
+.ok1{
+	font-size: large;
+}
+ .lab_logo{
+ 	height: 120px;
+ 	width: 120px;
+
+
+ }
+
+
+
+
+/*css of table of content*/
+
+#web-development,
+#mobile-development {
+  padding-bottom: 0;
+}
+
+section {
+  padding: 40px 0;
+  border-bottom: 1px solid #c1e1ec;
+}
+
+
+
+
+.nav a {
+  color: black;
+  font-style: italic;
+}
+
+.nav li a:hover,
+.nav li a:focus {
+  background: #86c5da;
+}
+
+.nav .active {
+  font-weight: bold;
+  background: #72bcd4;
+}
+
+.nav .nav {
+  display: none;
+}
+
+.nav .active .nav {
+  display: block;
+}
+
+.nav .nav a {
+  font-weight: normal;
+  font-size: .85em;
+}
+
+.nav .nav span {
+  margin: 0 5px 0 2px;
+}
+
+.nav .nav .active a,
+.nav .nav .active:hover a,
+.nav .nav .active:focus a {
+  font-weight: bold;
+  padding-left: 30px;
+  border-left: 5px solid black;
+}
+
+.nav .nav .active span,
+.nav .nav .active:hover span,
+.nav .nav .active:focus span {
+  display: none;
+}
+
+.application {
+  border-top: 1px solid #c1e1ec;
+}
+
+
+
+.affix-top {
+  position: relative;
+}
+
+.affix {
+  top: 20px;
+}
+
+.affix, 
+.affix-bottom {
+    width: 213px;
+}
+
+.affix-bottom {
+  position: absolute;
+}
+
+footer {
+  border-top: 1px solid #c1e1ec;
+}
+
+
+
+</style>
+<script type="text/javascript">
+	// Prevent dropdown menu from closing when click inside the form
+	$(document).on("click", ".navbar-right .dropdown-menu", function(e){
+		e.stopPropagation();
+	});
+</script>
+</head> 
+<body  data-spy="scroll" data-target=".scrollspy" style="font-color:red;">
+
+
+  
+
+
+<nav class="navbar navbar-default navbar-expand-lg navbar-light">
+	<div class="navbar-header d-flex col">
+		<a class="navbar-brand" href="#">CLASSICAL<b>PHYSICS</b></a>  		
+		<button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle navbar-toggler ml-auto">
+			<span class="navbar-toggler-icon"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+	</div>
+	<!-- Collection of nav links, forms, and other content for toggling -->
+	<div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">
+		<ul class="nav navbar-nav">
+			<li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+			<li class="nav-item"><a href="#" class="nav-link">About</a></li>			
+			<li class="nav-item dropdown">
+				<a data-toggle="dropdown" class="nav-link dropdown-toggle" href="#">Services <b class="caret"></b></a>
+				<ul class="dropdown-menu">					
+					<li><a href="#" class="dropdown-item">Web Design</a></li>
+					<li><a href="#" class="dropdown-item">Web Development</a></li>
+					<li><a href="#" class="dropdown-item">Graphic Design</a></li>
+					<li><a href="#" class="dropdown-item">Digital Marketing</a></li>
+				</ul>
+			</li>
+			<li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+			<li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+			<li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+		</ul>
+		<form class="navbar-form form-inline">
+			<div class="input-group search-box">								
+				<input type="text" id="search" class="form-control" placeholder="Search here...">
+				<span class="input-group-addon"><i class="material-icons">&#xE8B6;</i></span>
+			</div>
+		</form>
+		<ul class="nav navbar-nav navbar-right ml-auto">			
+			<li class="nav-item">
+				<a data-toggle="dropdown" class="nav-link dropdown-toggle" href="#">Login</a>
+				<ul class="dropdown-menu form-wrapper">					
+					<li>
+						<form action="/examples/actions/confirmation.php" method="post">
+							<p class="hint-text">Sign in with your social media account</p>
+							<div class="form-group social-btn clearfix">
+								<a href="#" class="btn btn-primary pull-left"><i class="fa fa-facebook"></i> Facebook</a>
+								<a href="#" class="btn btn-info pull-right"><i class="fa fa-twitter"></i> Twitter</a>
+							</div>
+							<div class="or-seperator"><b>or</b></div>
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Username" required="required">
+							</div>
+							<div class="form-group">
+								<input type="password" class="form-control" placeholder="Password" required="required">
+							</div>
+							<input type="submit" class="btn btn-primary btn-block" value="Login">
+							<div class="form-footer">
+								<a href="#">Forgot Your password?</a>
+							</div>
+						</form>
+					</li>
+				</ul>
+			</li>
+			<li class="nav-item">
+				<a href="#" data-toggle="dropdown" class="btn btn-primary dropdown-toggle get-started-btn mt-1 mb-1">Sign up</a>
+				<ul class="dropdown-menu form-wrapper">					
+					<li>
+						<form action="/examples/actions/confirmation.php" method="post">
+							<p class="hint-text">Fill in this form to create your account!</p>
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Username" required="required">
+							</div>
+							<div class="form-group">
+								<input type="password" class="form-control" placeholder="Password" required="required">
+							</div>
+							<div class="form-group">
+								<input type="password" class="form-control" placeholder="Confirm Password" required="required">
+							</div>
+							<div class="form-group">
+								<label class="checkbox-inline"><input type="checkbox" required="required"> I accept the <a href="#">Terms &amp; Conditions</a></label>
+							</div>
+							<input type="submit" class="btn btn-primary btn-block" value="Sign up">
+						</form>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+<div class="container">
+  <div class="row">
+    
+      <div class="col-md-3 scrollspy">
+        <ul id="nav" class="nav hidden-xs hidden-sm" data-spy="affix">
+          <li><a href="#web-design">COURSE DESCRIPTION</a></li>
+          <li><a href="#web-developments">COURSE OUTCOME</a></li>
+
+          <li><a href="#web-development">COURSE CONTENT</a>
+
+            <ul class="nav">
+              <li><a href="#ru"><span class="fa fa-angle-double-right"></span>Chapter:1</a></li>
+              <li><a href="#ru"><span class="fa fa-angle-double-right"></span>Chapter:2</a></li>
+               <li><a href="#ru"><span class="fa fa-angle-double-right"></span>Chapter:3</a></li>
+                <li><a href="#ru"><span class="fa fa-angle-double-right"></span>Chapter:4</a></li>
+                 <li><a href="#ru"><span class="fa fa-angle-double-right"></span>Chapter:5</a></li>
+                  <li><a href="#ru"><span class="fa fa-angle-double-right"></span>Chapter:6</a></li>
+                   <li><a href="#ru"><span class="fa fa-angle-double-right"></span>Chapter:7</a></li>
+                    <li><a href="#ru"><span class="fa fa-angle-double-right"></span>Chapter:8</a></li>
+                     <li><a href="#ru"><span class="fa fa-angle-double-right"></span>Chapter:9</a></li>
+                      <li><a href="#ru"><span class="fa fa-angle-double-right"></span>Chapter:10</a></li>
+                       <li><a href="#ru"><span class="fa fa-angle-double-right"></span>Chapter:11</a></li>
+                        <li><a href="#ru"><span class="fa fa-angle-double-right"></span>Chapter:12</a></li>
+                       
+            </ul>
+          </li>
+<li><a href="#courseg">COURSE grade</a></li>
+         
+
+        </ul>
+      </div>
+
+
+
+    <div class="col-sm-9">
+      <h1 class="page-header" id="table-of-contents-plugin-for-bootstrap">Table of Contents for Classical Physics</h1>
+
+        <section id="web-design">
+
+
+<h2 id="course-description">Course Description</h2>
+
+<p> Classical mechanics can be called the first branch of Physics upon which all other branches of Physics have been built. It can describe the motion of macroscopic objects like projectiles, parts in any machinery, spacecraft etc. Thus knowledge of classical mechanics to an engineering student becomes mandatory </p>
+</section>
+
+
+
+
+
+        <section id="web-developments">
+
+
+<h2 id="course-overview">Course Outcomes</h2>
+
+<p>On completion of this course, the students will have the ability to: </p>
+
+<ul>
+<li> Students will attain the basic problem solving skills in problems related to Newtonian mechanics,  rotational dynamics, etc.</li>
+<li>They would be able to apply the concepts of work and energy, linear and angular momentum in  their branch of engineering. 
+</li>
+<li> The concepts related to vector fields, vector calculus, electric field, electrical potential function. potential energy, magnetic field magnetic potential function etc. </li>
+<li> The four Maxwell’s equations </li>
+
+    
+</ul>
+</section>
+
+<section id="web-development">
+
+
+
+<h2 id="course-outline">Course Outline</h2>
+
+<section id="ru">
+
+<h3 id="class-1">CHAPTER-1: Co-Ordinate Systems</h3>
+
+<twitterwidget class="twitter-tweet twitter-tweet-rendered" id="twitter-widget-0" data-tweet-id="291978260433219584" style="position: static; visibility: visible; display: block; transform: rotate(0deg); max-width: 100%; width: 500px; min-width: 220px; margin-top: 10px; margin-bottom: 10px;"></twitterwidget>
+<script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<ol>
+ 
+
+  <li>
+    LECTURE NOTES
+  </li>
+
+  <li>
+    VIDEOS
+  </li>
+
+  <li>OTHER REFERNCES
+  </li>
+  
+</ol>
+
+
+
+<ul>
+  <li> <a href="https://ocw.mit.edu/courses/physics/8-01sc-classical-mechanics-fall-2016/readings/MIT8_01F16_chapter3.pdf">Coordinate Systems MIT lecture notes</a>.</li>
+  <li> <a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-837-computer-graphics-fall-2012/lecture-notes/MIT6_837F12_Lec03.pdf">Coordinates and Transformations Wojciech Matusik slides</a>.</li>
+  <li> <a href="https://ocw.mit.edu/search/ocwsearch.htm?q=coordinate%20system">Other MIT references</a>.</li>
+ 
+
+</ul>
+</section>
+
+<section id="ru">
+
+<h3 id="class-1">CHAPTER-2: Vectors and Kinematics</h3>
+
+<twitterwidget class="twitter-tweet twitter-tweet-rendered" id="twitter-widget-0" data-tweet-id="291978260433219584" style="position: static; visibility: visible; display: block; transform: rotate(0deg); max-width: 100%; width: 500px; min-width: 220px; margin-top: 10px; margin-bottom: 10px;"></twitterwidget>
+<script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<ol>
+  
+
+  <li>
+    LECTURE NOTES
+  </li>
+
+  <li>
+    VIDEOS
+  </li>
+
+  <li>OTHER REFERNCES
+  </li>
+  
+</ol>
+
+
+
+<ul>
+  <li> <a href="https://ocw.mit.edu/courses/physics/8-01sc-classical-mechanics-fall-2016/week-1-kinematics/1.1-coordinate-systems-and-unit-vectors-in-1d-position-vector-in-1d">Coordinate Systems and Unit Vectors in 1D Position Vector in 1D</a></li>
+  <li> <a href="https://ocw.mit.edu/courses/physics/8-01sc-classical-mechanics-fall-2016/week-1-kinematics/1.2-position-vector-in-1d">Position Vector in 1D</a>.</li>
+  <li> <a href="https://ocw.mit.edu/courses/physics/8-01sc-classical-mechanics-fall-2016/week-1-kinematics/1.3-displacement-vector-in-1d">Displacement Vector in 1D</a>.</li>
+  <li> <a href="https://ocw.mit.edu/courses/physics/8-01sc-classical-mechanics-fall-2016/week-1-kinematics/1.7-worked-example-derivatives-in-kinematics"> Worked Example - Derivatives in Kinematics</a>.</li>
+  <li> <a href="https://ocw.mit.edu/courses/physics/8-01sc-classical-mechanics-fall-2016/week-1-kinematics/">Other videos and Lectures References</a>.</li>
+
+</ul>
+</section>
+<section id="ru">
+
+<h3 id="class-1">CHAPTER-3:  Newtonian Mechanics
+</h3>
+
+<twitterwidget class="twitter-tweet twitter-tweet-rendered" id="twitter-widget-0" data-tweet-id="291978260433219584" style="position: static; visibility: visible; display: block; transform: rotate(0deg); max-width: 100%; width: 500px; min-width: 220px; margin-top: 10px; margin-bottom: 10px;"></twitterwidget>
+<script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<ol>
+ 
+
+  <li>
+    LECTURE NOTES
+  </li>
+
+  <li>
+    VIDEOS
+  </li>
+
+  <li>OTHER REFERNCES
+  </li>
+  
+</ol>
+
+
+
+<ul>
+  <li> <a href="https://ocw.mit.edu/courses/physics/8-012-physics-i-classical-mechanics-fall-2008/">Newtonian Mechanics-I</a>.</li>
+  <li> <a href="https://ocw.mit.edu/courses/physics/8-223-classical-mechanics-ii-january-iap-2017/">Newtonian Mechanics-II</a>.</li>
+  <li> <a href="https://ocw.mit.edu/search/ocwsearch.htm?q=newtonian%20mechanics">Other Videos and references</a>.</li>
+ 
+
+</ul>
+</section>
+<section id="ru">
+
+<h3 id="class-1">CHAPTER-4: Momentum</h3>
+
+<twitterwidget class="twitter-tweet twitter-tweet-rendered" id="twitter-widget-0" data-tweet-id="291978260433219584" style="position: static; visibility: visible; display: block; transform: rotate(0deg); max-width: 100%; width: 500px; min-width: 220px; margin-top: 10px; margin-bottom: 10px;"></twitterwidget>
+<script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<ol>
+ 
+
+  <li>
+    LECTURE NOTES
+  </li>
+
+  <li>
+    VIDEOS
+  </li>
+
+  <li>OTHER REFERNCES
+  </li>
+  
+</ol>
+
+
+
+<ul>
+  <li> <a href="https://ocw.mit.edu/courses/physics/8-01sc-classical-mechanics-fall-2016/week-5-momentum-and-impulse/">Momentum and Impulse
+</a>.</li>
+  <li> <a href="https://ocw.mit.edu/courses/physics/8-01sc-classical-mechanics-fall-2016/week-5-momentum-and-impulse/15.4-momentum-of-a-system-of-point-particles">Momentum of a System of Point Particles</a>.</li>
+  <li> <a href="https://ocw.mit.edu/courses/physics/8-01sc-classical-mechanics-fall-2016/week-5-momentum-and-impulse/16.1-conservation-of-momentum">Conservation of Momentum</a>.</li>
+  <li> <a href="https://ocw.mit.edu/search/ocwsearch.htm?q=momentum">Other Videos and References</a>.</li>
+  
+
+</ul>
+</section>
+<section id="ru">
+
+<h3 id="class-1">CHAPTER-5: Work and Energy </h3>
+
+<twitterwidget class="twitter-tweet twitter-tweet-rendered" id="twitter-widget-0" data-tweet-id="291978260433219584" style="position: static; visibility: visible; display: block; transform: rotate(0deg); max-width: 100%; width: 500px; min-width: 220px; margin-top: 10px; margin-bottom: 10px;"></twitterwidget>
+<script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<ol>
+  
+  <li>
+    LECTURE NOTES
+  </li>
+
+  <li>
+    VIDEOS
+  </li>
+
+  <li>OTHER REFERNCES
+  </li>
+  
+</ol>
+
+
+
+<ul>
+  <li> <a href="https://ocw.mit.edu/courses/aeronautics-and-astronautics/16-07-dynamics-fall-2009/lecture-notes/MIT16_07F09_Lec12.pdf">Work and Energy</a>.</li>
+  <li> <a href="https://ocw.mit.edu/courses/physics/8-01sc-classical-mechanics-fall-2016/week-7-kinetic-energy-and-work/20.2-work-by-a-constant-force">Work by a Constant Force</a>.</li>
+  <li> <a href="https://ocw.mit.edu/courses/physics/8-01sc-classical-mechanics-fall-2016/week-7-kinetic-energy-and-work/20.3-work-by-a-non-constant-force">Work by a Non Constant Force</a>.</li>
+  <li> <a href="https://ocw.mit.edu/courses/physics/8-01sc-classical-mechanics-fall-2016/week-7-kinetic-energy-and-work/">Other videos and References</a>.</li>
+  
+
+</ul>
+</section>
+<section id="ru">
+
+<h3 id="class-1">CHAPTER-6: Collisions in Center-of-Mass Frame </h3>
+
+<twitterwidget class="twitter-tweet twitter-tweet-rendered" id="twitter-widget-0" data-tweet-id="291978260433219584" style="position: static; visibility: visible; display: block; transform: rotate(0deg); max-width: 100%; width: 500px; min-width: 220px; margin-top: 10px; margin-bottom: 10px;"></twitterwidget>
+<script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<ol>
+  
+
+  <li>
+    LECTURE NOTES
+  </li>
+
+  <li>
+    VIDEOS
+  </li>
+
+  <li>OTHER REFERNCES
+  </li>
+  
+</ol>
+
+
+
+<ul>
+  <li> <a href="https://ocw.mit.edu/courses/physics/8-01sc-classical-mechanics-fall-2016/week-9-collision-theory/dd.2.1-position-in-the-cm-frame">Position in the CM Frame</a>.</li>
+  <li> <a href="https://ocw.mit.edu/courses/physics/8-01sc-classical-mechanics-fall-2016/week-9-collision-theory/dd.2.3-1d-elastic-collision-velocities-in-cm-frame">1D Elastic Collision Velocities in CM Frame</a>.</li>
+  <li> <a href="https://ocw.mit.edu/courses/physics/8-01sc-classical-mechanics-fall-2016/week-9-collision-theory/dd.2.6-kinetic-energy-in-the-cm-frame">Kinetic Energy in the CM Frame</a>.</li>
+  <li> <a href="https://ocw.mit.edu/courses/physics/8-01sc-classical-mechanics-fall-2016/week-9-collision-theory/">Other videos and references</a>.</li>
+ 
+
+</ul>
+</section>
+<section id="ru">
+
+<h3 id="class-1">CHAPTER-7: Angular Momentum </h3>
+
+<twitterwidget class="twitter-tweet twitter-tweet-rendered" id="twitter-widget-0" data-tweet-id="291978260433219584" style="position: static; visibility: visible; display: block; transform: rotate(0deg); max-width: 100%; width: 500px; min-width: 220px; margin-top: 10px; margin-bottom: 10px;"></twitterwidget>
+<script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<ol>
+  
+
+  <li>
+    LECTURE NOTES
+  </li>
+
+  <li>
+    VIDEOS
+  </li>
+
+  <li>OTHER REFERNCES
+  </li>
+  
+</ol>
+
+
+
+<ul>
+  <li> <a href="https://ocw.mit.edu/courses/physics/8-01sc-classical-mechanics-fall-2016/week-11-angular-momentum/"> Angular Momentum</a>.</li>
+  <li> <a href="https://ocw.mit.edu/courses/physics/8-01sc-classical-mechanics-fall-2016/week-11-angular-momentum/32.1-angular-momentum-for-a-point-particle">Angular Momentum for a Point Particle</a>.</li>
+  <li> <a href="https://ocw.mit.edu/courses/physics/8-01sc-classical-mechanics-fall-2016/week-11-angular-momentum/33.2-angular-momentum-of-a-symmetric-object">Angular Momentum of a Symmetric Object</a>.</li>
+  <li> <a href="https://ocw.mit.edu/courses/physics/8-01sc-classical-mechanics-fall-2016/week-11-angular-momentum/">Other Videos and References</a>.</li>
+
+
+</ul>
+</section>
+<section id="ru">
+
+<h3 id="class-1">CHAPTER-8: Torque </h3>
+
+<twitterwidget class="twitter-tweet twitter-tweet-rendered" id="twitter-widget-0" data-tweet-id="291978260433219584" style="position: static; visibility: visible; display: block; transform: rotate(0deg); max-width: 100%; width: 500px; min-width: 220px; margin-top: 10px; margin-bottom: 10px;"></twitterwidget>
+<script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<ol>
+  
+
+  <li>
+    LECTURE NOTES
+  </li>
+
+  <li>
+    VIDEOS
+  </li>
+
+  <li>OTHER REFERNCES
+  </li>
+  
+</ol>
+
+
+
+<ul>
+  <li> <a href="https://ocw.mit.edu/courses/physics/8-01sc-classical-mechanics-fall-2016/week-10-rotational-motion/30.1-introduction-to-torque-and-rotational-dynamics/"> Introduction to Torque and Rotational Dynamics</a>.</li>
+  <li> <a href="https://ocw.mit.edu/courses/mechanical-engineering/2-003j-dynamics-and-control-i-fall-2007/video-lectures/lecture-9/">Dumbbell problem, multiple particle systems, rigid bodies, derivation of torque</a>.</li>
+  <li> <a href="https://ocw.mit.edu/courses/mechanical-engineering/2-003sc-engineering-dynamics-fall-2011/angular-momentum-and-torque/">Angular Momentum and Torque</a>.</li>
+  <li> <a href="https://ocw.mit.edu/search/ocwsearch.htm?q=torque">Other Videos and References</a>.</li>
+ 
+
+</ul>
+</section>
+<section id="ru">
+
+<h3 id="class-1">CHAPTER-9: Rigid Body Motion</h3>
+
+<twitterwidget class="twitter-tweet twitter-tweet-rendered" id="twitter-widget-0" data-tweet-id="291978260433219584" style="position: static; visibility: visible; display: block; transform: rotate(0deg); max-width: 100%; width: 500px; min-width: 220px; margin-top: 10px; margin-bottom: 10px;"></twitterwidget>
+<script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<ol>
+  
+
+  <li>
+    LECTURE NOTES
+  </li>
+
+  <li>
+    VIDEOS
+  </li>
+
+  <li>OTHER REFERNCES
+  </li>
+  
+</ol>
+
+
+
+<ul>
+  <li> <a href="https://ocw.mit.edu/courses/aeronautics-and-astronautics/16-07-dynamics-fall-2009/lecture-notes/MIT16_07F09_Lec21.pdf">Rigid Body Dynamics</a>.</li>
+  <li> <a href="https://ocw.mit.edu/courses/physics/8-01sc-classical-mechanics-fall-2016/week-10-rotational-motion/28.1-rigid-bodies/">Rigid Bodies</a>.</li>
+  <li> <a href="https://ocw.mit.edu/courses/physics/8-09-classical-mechanics-iii-fall-2014/lecture-notes/MIT8_09F14_Chapter_2.pdf">lecture notes MIT</a>.</li>
+  <li> <a href="https://ocw.mit.edu/search/ocwsearch.htm?q=rigidbodydynamics">Other Videos and References</a>.</li>
+ 
+  
+
+</ul>
+</section>
+<section id="ru">
+
+<h3 id="class-1">CHAPTER-10: Central Force Motion </h3>
+
+<twitterwidget class="twitter-tweet twitter-tweet-rendered" id="twitter-widget-0" data-tweet-id="291978260433219584" style="position: static; visibility: visible; display: block; transform: rotate(0deg); max-width: 100%; width: 500px; min-width: 220px; margin-top: 10px; margin-bottom: 10px;"></twitterwidget>
+<script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<ol>
+ 
+
+  <li>
+    LECTURE NOTES
+  </li>
+
+  <li>
+    VIDEOS
+  </li>
+
+  <li>OTHER REFERNCES
+  </li>
+  
+</ol>
+
+
+
+<ul>
+  <li> <a href="https://ocw.mit.edu/courses/aeronautics-and-astronautics/16-07-dynamics-fall-2009/lecture-notes/MIT16_07F09_Lec15.pdf">Central Force Motion: Kepler’s Laws</a>.</li>
+  <li> <a href="https://ocw.mit.edu/courses/aeronautics-and-astronautics/16-07-dynamics-fall-2009/lecture-notes/MIT16_07F09_Lec16.pdf">Central Force Motion: Orbits</a>.</li>
+  <li> <a href="https://ocw.mit.edu/search/ocwsearch.htm?q=centralforcemotion">Other Videos and References</a>.</li>
+  
+  
+
+</ul>
+</section>
+<section id="ru">
+
+<h3 id="class-1">CHAPTER-11: Harmonic Oscillator</h3>
+
+<twitterwidget class="twitter-tweet twitter-tweet-rendered" id="twitter-widget-0" data-tweet-id="291978260433219584" style="position: static; visibility: visible; display: block; transform: rotate(0deg); max-width: 100%; width: 500px; min-width: 220px; margin-top: 10px; margin-bottom: 10px;"></twitterwidget>
+<script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<ol>
+  
+
+  <li>
+    LECTURE NOTES
+  </li>
+
+  <li>
+    VIDEOS
+  </li>
+
+  <li>OTHER REFERNCES
+  </li>
+  
+</ol>
+
+
+
+<ul>
+  <li> <a href="https://ocw.mit.edu/courses/nuclear-engineering/22-51-quantum-theory-of-radiation-interactions-fall-2012/lecture-notes/MIT22_51F12_Ch9.pdf"> Harmonic Oscillator</a>.</li>
+  <li> <a href="https://ocw.mit.edu/courses/physics/8-04-quantum-physics-i-spring-2016/video-lectures/part-2/harmonic-oscillator-differential-equation/">Harmonic oscillator: Differential equation</a>.</li>
+  <li> <a href="https://ocw.mit.edu/search/ocwsearch.htm?q=harmonicoscillator">Other References and Videos</a>.</li>
+  
+  
+
+</ul>
+</section>
+<section id="ru">
+
+<h3 id="class-1">CHAPTER-12: Non-Inertial Frame of Reference </h3>
+
+<twitterwidget class="twitter-tweet twitter-tweet-rendered" id="twitter-widget-0" data-tweet-id="291978260433219584" style="position: static; visibility: visible; display: block; transform: rotate(0deg); max-width: 100%; width: 500px; min-width: 220px; margin-top: 10px; margin-bottom: 10px;"></twitterwidget>
+<script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<ol>
+ 
+
+  <li>
+    LECTURE NOTES
+  </li>
+
+  <li>
+    VIDEOS
+  </li>
+
+  <li>OTHER REFERNCES
+  </li>
+  
+</ol>
+
+
+
+<ul>
+  <li> <a href="https://ocw.mit.edu/courses/physics/8-01sc-classical-mechanics-fall-2016/week-2-newtons-laws/4.4-non-inertial-reference-frames/">Non-inertial Reference Frames</a>.</li>
+  <li> <a href="https://ocw.mit.edu/resources/res-tll-004-stem-concept-videos-fall-2013/videos/representations/rotating-frames-of-reference/">Rotating Frames of Reference</a>.</li>
+  <li> <a href="https://ocw.mit.edu/search/ocwsearch.htm?q=noninertialframeofreference ">Other Videos and References</a>.</li>
+  
+  
+
+</ul>
+</section>
+
+
+<section id="courseg">
+
+<h2 id="grading">Grading</h2>
+
+<ul>
+ Weightage: <li>Quizzes: 10</li> 
+ 			<li>Midterm: 40</li> 
+ 			<li>Final Examination: 50</li>
+
+</ul>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+  </div>
+
+</div>
+
+
+
+
+<footer class="footer-distributed">
+
+			<div class="footer-left">
+
+				<h3>INSTITUTE<span>LOGO</span></h3>
+
+				<p class="footer-links">
+					<a href="#" class="link-1">Home</a>
+					
+					<a href="#">Blog</a>
+				
+					<a href="#">Pricing</a>
+				
+					<a href="#">About</a>
+					
+					<a href="#">Faq</a>
+					
+					<a href="#">Contact</a>
+				</p>
+
+				<p class="footer-company-name">Company Name © 2015</p>
+			</div>
+
+			<div class="footer-center">
+
+				<div>
+					<i class="fa fa-map-marker"></i>
+					<p><span>XXXX</span> LNMIIT, JAMDOLI</p>
+				</div>
+
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>+XXXXXX</p>
+				</div>
+
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:support@company.com">support@company.com</a></p>
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p class="footer-company-about">
+					<span>About the company</span>
+					Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+				</p>
+
+				<div class="footer-icons">
+
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-linkedin"></i></a>
+					<a href="#"><i class="fa fa-github"></i></a>
+
+				</div>
+
+			</div>
+
+		</footer>
+<script>
+	$('#nav').affix({
+    offset: {     
+      top: $('#nav').offset().top,
+      bottom: ($('footer').outerHeight(true) + $('.application').outerHeight(true)) + 40
+    }
+});
+
+</script>
+
+
+
+
+
+</body>
+</html>                                                                                    
