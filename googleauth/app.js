@@ -225,6 +225,14 @@ app.get("/resources",function(req,res){
 	res.render("resources",{user: req.user});
 });	
 
+app.get("/contact",function(req,res){
+	res.render("contact");
+});	
+
+app.get("/instructor",function(req,res){
+	res.render("instructor");
+});	
+
 
 app.get("/resources/:cid/notes",function(req,res){
 	var field = req.params.cid;
