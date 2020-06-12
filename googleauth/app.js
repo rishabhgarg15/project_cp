@@ -163,12 +163,12 @@ app.post("/upload",function(req,res){
 				}
 			});
 
-			
+
 
 	}else{
 		res.send("Cannot upload your file!");
 	}
-		
+
 });
 
 app.get('/addVideo', (req, res) => {
@@ -199,7 +199,7 @@ app.post('/addVideo', (req, res) => {
 								}
 						});
 					}
-				});		
+				});
 
 });
 
@@ -217,25 +217,25 @@ app.post('/addVideo', (req, res) => {
 // 		}
 // 	});
 
-// });	
+// });
 
 
 
 app.get("/resources",function(req,res){
-	res.render("resources",{user: req.user});
-});	
+	res.render("tableofcontents",{user: req.user});
+});
 
 app.get("/contact",function(req,res){
 	res.render("contact");
-});	
+});
 
 app.get("/instructor",function(req,res){
 	res.render("instructor");
-});	
+});
 
 app.get("/team",function(req,res){
 	res.render("team");
-});	
+});
 
 
 app.get("/resources/:cid/notes",function(req,res){
@@ -246,10 +246,10 @@ app.get("/resources/:cid/notes",function(req,res){
 			res.send("Something went wrong");
 		}else {
 			// console.log(files);
-			res.render("notes",{files:files});	
-		}	
+			res.render("notes",{files:files});
+		}
 	});
-	
+
 });
 
 app.get("/resources/:cid/videos",function(req,res){
@@ -259,12 +259,12 @@ app.get("/resources/:cid/videos",function(req,res){
 			res.send("Something went wrong");
 		}else {
 			// console.log(videos);
-			res.render("videos",{videos:videos});	
-		}	
+			res.render("videos",{videos:videos});
+		}
 	});
 
 
-		
+
 });
 
 
@@ -291,9 +291,9 @@ fs.unlink(path, (err) => {
 			res.redirect("/");
 		}
 	});
-	
+
 }
-	
+
 });
 
 });
@@ -319,7 +319,3 @@ app.delete("/delete/video/:id",function(req,res){
 app.listen(3000, () => {
     console.log('app now listening for requests on port 3000');
 });
-
-
-
-
