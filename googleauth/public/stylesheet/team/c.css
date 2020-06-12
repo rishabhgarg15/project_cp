@@ -1,0 +1,33 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300|Raleway+Dots|Lato:300|Inconsolata|Montserrat);
+
+
+.skills {
+  max-width: 50%;
+  margin: 40px auto;
+  text-align: center;
+}
+.skills .hr-text {
+  font-size: 20px;
+  position: relative;
+  border: 0;
+  height: 1.5em;
+}
+.skills .hr-text:before {
+  content: '';
+  background: linear-gradient(to right, transparent, #b2b2b2, transparent);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 1px;
+}
+.skills .hr-text:after {
+  content: attr(data-content);
+  position: relative;
+  display: inline-block;
+  color: black;
+  padding: 0 .5em;
+  line-height: 1.5em;
+  color: #24bba0;
+  background-color: black;
+}

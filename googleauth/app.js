@@ -233,6 +233,10 @@ app.get("/instructor",function(req,res){
 	res.render("instructor");
 });	
 
+app.get("/team",function(req,res){
+	res.render("team");
+});	
+
 
 app.get("/resources/:cid/notes",function(req,res){
 	var field = req.params.cid;
