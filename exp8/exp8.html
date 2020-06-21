@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+<title>Classical Physics</title>
+<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="https://aashish157.github.io/Physics-Lab-Website/resources/images/book.png">
+<link rel="stylesheet" type="text/css" href="https://aashish157.github.io/Physics-Lab-Website/resources/images/refresh.png">
+<link rel="stylesheet" type="text/css" href="https://aashish157.github.io/Physics-Lab-Website/resources/images/videocam.png">
+<link rel="stylesheet" type="text/css" href="https://aashish157.github.io/Physics-Lab-Website/resources/images/resources.png">
+<link rel="stylesheet" type="text/css" href="https://aashish157.github.io/Physics-Lab-Website/resources/images/viva.png">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="exp8.css">
+  <script type="text/javascript" src="exp8.js"></script>
+
+
+
+<style>
+
+  .videom{
+
+      padding-bottom: 12px;
+
+  }
+</style>
+
+<script type="text/javascript">
+  // Prevent dropdown menu from closing when click inside the form
+  $(document).on("click", ".navbar-right .dropdown-menu", function(e){
+    e.stopPropagation();
+  });
+</script>
+</head>
+<body>
+
+
+
+
+<nav class="navbar navbar-default navbar-expand-lg navbar-light">
+  <div class="navbar-header d-flex col">
+    <a class="navbar-brand" href="#">CLASSICAL<b>PHYSICS</b></a>
+    <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle navbar-toggler ml-auto">
+      <span class="navbar-toggler-icon"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+  </div>
+  <!-- Collection of nav links, forms, and other content for toggling -->
+  <div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">
+    <ul class="nav navbar-nav">
+      <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+      <li class="nav-item dropdown">
+        <a data-toggle="dropdown" class="nav-link dropdown-toggle" href="#">Services <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><a href="#" class="dropdown-item">xxcx</a></li>
+          <li><a href="#" class="dropdown-item">Web</a></li>
+          <li><a href="#" class="dropdown-item">yyy</a></li>
+          <li><a href="#" class="dropdown-item">zzz</a></li>
+        </ul>
+      </li>
+      <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+    </ul>
+ <!--    <form class="navbar-form form-inline">
+      <div class="input-group search-box">
+        <input type="text" id="search" class="form-control" placeholder="Search here...">
+        <span class="input-group-addon"><i class="material-icons">&#xE8B6;</i></span>
+      </div>
+    </form> -->
+     <ul class="nav navbar-nav navbar-right ml-auto">
+            <li class="nav-item">
+                <a data-toggle="dropdown" class="nav-link dropdown-toggle" href="#">Login</a>
+                <ul class="dropdown-menu form-wrapper">
+                    <li>
+                        <form action="/examples/actions/confirmation.php" method="post">
+                            <p class="hint-text">Sign in with your social media account</p>
+                            <div class="form-group social-btn clearfix">
+                                <a href="#" class="btn btn-primary pull-left"><i class="fa fa-facebook"></i> Facebook</a>
+                                <a href="#" class="btn btn-info pull-right"><i class="fa fa-twitter"></i> Twitter</a>
+                            </div>
+                            <div class="or-seperator"><b>or</b></div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Username" required="required">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Password" required="required">
+                            </div>
+                            <input type="submit" class="btn btn-primary btn-block" value="Login">
+                            <div class="form-footer">
+                                <a href="#">Forgot Your password?</a>
+                            </div>
+                        </form>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="#" data-toggle="dropdown" class="btn btn-primary dropdown-toggle get-started-btn mt-1 mb-1">Sign up</a>
+                <ul class="dropdown-menu form-wrapper">
+                    <li>
+                        <form action="/examples/actions/confirmation.php" method="post">
+                            <p class="hint-text">Fill in this form to create your account!</p>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Username" required="required">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Password" required="required">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Confirm Password" required="required">
+                            </div>
+                            <div class="form-group">
+                                <label class="checkbox-inline"><input type="checkbox" required="required"> I accept the <a href="#">Terms &amp; Conditions</a></label>
+                            </div>
+                            <input type="submit" class="btn btn-primary btn-block" value="Sign up">
+                        </form>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+        <div class="container-fluid">
+            <div class="col-md-12 row">
+                <div class="container">
+                    <h1><b><u>Electromagnetic induction</u></b></h1>
+
+                    <!----NAV TABS ---->
+                    </br>
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a data-toggle="tab" href="#home">
+                            <img src="https://aashish157.github.io/Physics-Lab-Website/resources/images/book.png">
+                            <b>Theory</b></a></li>
+                        <li><a data-toggle="tab" href="#menu1">
+                            <img src="https://aashish157.github.io/Physics-Lab-Website/resources/images/refresh.png">
+                            <b>Procedure</b></a></li>
+                        <li><a data-toggle="tab" href="#menu2">
+                            <img src="https://aashish157.github.io/Physics-Lab-Website/resources/images/videocam.png">
+                            <b>Video</b></a></li>
+                        <li><a data-toggle="tab" href="#menu3">
+                            <img src="https://aashish157.github.io/Physics-Lab-Website/resources/images/resources.png">
+                            <b>Resources</b></a></li>
+                        <li><a data-toggle="tab" href="#menu4">
+                            <img src="https://aashish157.github.io/Physics-Lab-Website/resources/images/viva.png">
+                            <b>Viva Voce</b></a></li>
+                    </ul>
+
+                              <div class="tab-content">
+                            <div id="home" class="tab-pane fade in active">
+
+                                <br><h2><b>Aim :</b></h2>
+                                <p>1. To study the flux and emf in the coil as a function of time.</p>
+                                <p>2. To study the maximum emf and total flux as a function of the velocity of the magnet.</p>
+                                <p>3. To demonstrate damping due to induced current.</p>
+                                <br>
+
+
+                                <h2><b>Theory :</b></h2>
+                                <p>Faraday’s law of electromagnetic induction tells us that a change in magnetic flux gives
+                                    rise to an induced emf given by</p>(8.1)
+                                <p align="center"><img src="https://aashish157.github.io/Physics-Lab-Website/resources/images/e7/7.7.jpg" style="width: 20%;"></p>
+                                <p>where φ is the magnetic flux. A simple apparatus has been designed, whose schematic</p>
+                                <p align="center"><img src="https://aashish157.github.io/Physics-Lab-Website/resources/images/e7/7.7.1png.jpg" style="width: 35%;"></p>
+                                 <p align="center">Figure 8.1: Schematic of the coil moving in and out of the magnetic field.</p>
+                                <br /><p>diagram is shown in Fig. (8.1), enables us to change θ at different rates through a coil of
+                                     suitable area of cross-section. A rigid semicircular frame of aluminium is pivoted at the
+                                    centre of the semicircle. The whole frame can oscillate freely in its own plane, about a
+                                    horizontal axis passing through its centre. A bar magnet can be mounted at the centre of
+                                    the arc and the arc passes through a coil C.</p>
+
+                                <p>It is very instructive to study the emf, induced in the coil as the magnet passes through
+                                    the coil while oscillating. In this experiment we will use a computer to monitor emf induced
+                                    as a function of time.</p>
+                                <p>The rate of change of flux through the coil is essentially proportional to the velocity
+                                    of the magnet, as it passes through the coil. Choosing different amplitudes of oscillations
+                                    can vary the velocity.</p>
+                                <p>If I is the moment of inertia of the oscillatory system and ω is the angular velocity of
+                                    the magnet, then the kinetic energy of the system is Iω^2/2 and potential energy can be
+                                    represented by MgL(1 − cosθ) at any instant of time, where L is the effective length of
+                                    the corresponding simple pendulum. If θo is the maximum angular amplitude and ωmax
+                                    is the maximum value of angular velocity, then</p>(8.2)
+                                <p align="center"><img src="https://aashish157.github.io/Physics-Lab-Website/resources/images/e7/7.12.jpg" style="width: 30%;"></p>
+                                <p>The motion can be regarded approximately as simple harmonic and its time period is
+                                    given by</p>(8.3)
+                                <p align="center"><img src="https://aashish157.github.io/Physics-Lab-Website/resources/images/e7/7.13png.jpg" style="width: 20%;"></p>
+                                <p>From Eq. (8.2) and (8.3), we get.</p>
+                                <p align="center"><img src="https://aashish157.github.io/Physics-Lab-Website/resources/images/e7/7.6.jpg" style="width: 20%;"></p>
+                                <p>where vmax is the maximum linear velocity associated with ωmax. Angular amplitude θo
+                                    is directly measured from the instrument. Velocity is computed by measuring T and θo.</p>
+
+                            </div>
+
+
+                            <div id="menu1" class="tab-pane fade">
+                              <br><h2><b>Apparatus Required :</b></h2>
+                              <p>Faraday setup, diode, capacitor, breadboard, connecting wire, CRO etc.</p>
+                              <h2><b>Procedure :</b></h2>
+                              <p>1. <b>Charging of capacitor to obtain</b> εmax
+                                    The induced emf can be measured by using a simple circuit as shown in Fig. 8.2.
+                                    The induced emf in the coil charges a capacitor C, through a resistance R and a
+                                    diode D and the voltage developed across C is measured by voltmeter V . The diode
+                                    current can flow only if the voltage at A is greater than B. Thus once a capacitor
+                                    attains a voltage ", current can flow through the capacitor only if the induced emf is
+                                    greater than ". If the time constant RC is not small compared to the time taken for
+                                    the magnet to cross the coil, the capacitor does not get fully charged in AC signal
+                                    oscillation. It may take several oscillations to do so.</p>
+                                <p>Connect a resistor, diode and a capacitor given to you in series with the coil. Observe
+                                    the signal across resistor, diode and the capacitor as a function of time</p>
+                              <p>Calculate vmax using Eq. (8.5) and plot a graph between "max vs vmax. "max is the
+                                    maximum potential obtained in the CRO.</p>
+                              <p> 2. <b>Induced emf as a function of velocity</b>You can use the computer interface provided to measure the voltage as a function of time. The instructor will explain you how to use the software.
+                              </p>
+                               <p align="center"><img src="https://aashish157.github.io/Physics-Lab-Website/resources/images/e7/7.5.jpg" style="width: 30%;"></p>
+                               <p align="center">Figure 8.2: Circuit diagram for charging of a capacitor</p>
+                              <ul>
+                                  <li>Ensure that the support for the apparatus is vertical by adjusting levelling
+                                        screws. Adjust the weights W1 and W2 mounted on the horizontal bar to make
+                                        zero of the scale as the mean position. Centre of the magnet must be inside
+                                        the coil.</li>
+                                    <li>Ensure that the support for the apparatus is vertical by adjusting levelling
+                                            screws. Adjust the weights W1 and W2 mounted on the horizontal bar to make
+                                            zero of the scale as the mean position. Centre of the magnet must be inside
+                                            the coil.</li>
+                                    <li>Plot of t vs φ(t): Record one or two oscillations. Focus on only one of them
+                                        by using magnification button. Use the integration feature of the software to
+                                        obtain flux φ as a function of time. You can integrate only half of the pulse,
+                                        since the pulse is highly symmetric. Plot this on a graph paper for the complete
+                                        pulse.</li>
+                                    <li>vmax dependence of slope of "(t) at mean position and φ: The emf induced in the coil
+                                        can be written as</li>(8.6)
+                                    <p align="center"><img src="https://aashish157.github.io/Physics-Lab-Website/resources/images/e7/7.14.jpg" style="width: 30%;"></p>
+                                    <p>Note that when the magnet is at its mean position, then ω = ωmax or velocity
+                                        is at its maximum since Vmax = ωmax R. However, dφ/dθ = 0 at that point.
+                                        Hence emf will go through a zero corresponding to the mean position. Also
+                                        note that</p>(8.7)
+                                    <p align="center"><img src="https://aashish157.github.io/Physics-Lab-Website/resources/images/e7/7.4.jpg" style="width: 30%;"></p>
+                                    <p>Hence a plot of the slope of ε(t) at the zero, corresponding to the mean position against v^2
+                                        max would be linear. The proportionality constant depends only on the geometry of the coil and the magnet. For calculating φ use “Show integral" mode as before.</p>
+
+                              </ul>
+                              <p><b>3. Electromagnetic damping in an oscillating system</b>
+                                    We observe that the successive oscillations are not of the same amplitude. This is
+                                    due to damping. Possible sources are: (i) air resistance, (ii) friction at the point of
+                                    suspension, and (iii) induced emf (Lenz’s law).</p>
+                                <p>The system (for small ) and for damping proportional to velocity would satisfy the
+                                    equation.</p>(8.8)
+
+                                <p align="center"><img src="https://aashish157.github.io/Physics-Lab-Website/resources/images/e7/7.3.jpg" style="width: 30%;"></p>
+                                <p>where I is moment of inertia about origin, k is damping coefficient and λ0 is restoring
+                                        couple (Mgl0), if treated as a simple pendulum of length 1.</p>
+                                <p>The amplitude would exponentially decay only if k is a constant and damping term
+                                        depends linearly in velocity. Record a large number of oscillations starting from
+                                        initial amplitude of 300 to study the damping behaviour in the absence of induced
+                                        current in the coil. The plot seen on the screen may not be correct representation of
+                                        data since the number of points to be plotted is too large. Therefore divide the time
+                                        axis to approximately 8 to 10 zones and take data after magnifying 1 pulse from each
+                                        zone. Plot ωmax and (dω/dt)(vmax) as a function of time or number of oscillations.
+                                        From your data calculate Q of this oscillator using A = Aoert/2 and Q = ωo/r.</p>
+
+                                <p>Now, connect a resistor of about 220
+                                    (the coil resistance is around 900) in series with the coil and record voltage dropped across the resistor as a function of time (for large number of oscillations as in the previous case). Repeat analysis of data as above.</p>
+
+                                <p>4. <b>Useful features of the software measure:</b></p>
+                                <p>It is easy to use the software given to you. Take a few minutes to summarize yourself
+                                    with it before going to the detailed experiments. All you have to do is to click the
+                                    required icon given at the top. Some of the important ones are as follows:</p>
+                                <p>ARROW: In this mode simply point the cursor at the required point to obtain
+                                            values of the coordinates.</p>
+                                <p>MARK: Use this mark a portion of the curve. The x-coordinate of the mark portion
+                                        are shown on the bottom. The marked portion is highlighted in a different
+                                        colour.
+                                <p>SURVEY: You can adjust the left bottom and right top coordinates of the cursor
+                                    box to obtain coordinates and their differences in this mode. You can use this
+                                    to calculate slopes around a point.</p>
+                                <p>SHOW INTEGRAL: Mark the portion of the curve for which you need to calculate
+                                    the integral and then click this icon to obtain the value. If you need to start
+                                    from the origin, each time, take the cursor out of the plotting area and drag it
+                                    across the origin to ensure that starting point is the same.</p>
+                                <p>SLOPE: Mark the required portion of the curve for which you need the slope and
+                                    then click this icon to get slope. However, we recommend use of survey mode
+                                    to get slope more accurate.</p>
+
+
+                              <p><h2><b>Observations :</b></h2></p>
+                              <p align="center"><img src="https://aashish157.github.io/Physics-Lab-Website/resources/images/e7/7.2.jpg" style="width: 55%;"></p>
+                              <p align="center"><img src="https://aashish157.github.io/Physics-Lab-Website/resources/images/e7/e7.1.jpg" style="width: 55%;"></p>
+                              <p><h2><b>Result :</b></h2></p>
+                              <p>1. </p>
+                              <p>2. </p>
+                            </div>
+
+                            <div id="menu2" class="tab-pane fade">
+                              <h2>VIDEO</h2>
+                              <p style="height: 200px" align="center">CURRENTLY NOT AVAILABLE
+                              <br>
+                              <img src="https://aashish157.github.io/Physics-Lab-Website/resources/images/sad_emoji.png" style="height: 100px"></p>
+                            </div>
+                            <div id="menu3" class="tab-pane fade">
+                              <h2>RESOURCES</h2>
+                              <p><b>1. <a href="https://courses.lumenlearning.com/boundless-physics/chapter/magnetic-flux-induction-and-faradays-law/" target="_blank">https://courses.lumenlearning.com/boundless-physics/chapter/magnetic-flux-induction-and-faradays-law/</a><br><br>
+                                2. <a href="http://nptel.ac.in/courses/Webcourse-contents/IIT-%20Guwahati/engg_phy2/md07_experiment/module10/lectures/lect1/em_induction/topic2/slides/slide6.htm" target="_blank">http://nptel.ac.in/courses/Webcourse-contents/IIT-%20Guwahati/engg_phy2/md07_experiment/module10/lectures/lect1/em_induction/topic2/slides/slide6.htm</a><br><br>
+                                3. <a href="https://www.electronics-tutorials.ws/electromagnetism/electromagnetic-induction.html" target="_blank">https://www.electronics-tutorials.ws/electromagnetism/electromagnetic-induction.html</a></b></p>
+                            </div>
+                            <div id="menu4" class="tab-pane fade">
+                              <h2><b>VIVA VOCE</b></h2>
+                              <p id="quiz_heading">-Check Yourself-</p>
+
+                                <form id="quiz" name="quiz">
+                                  <p><b><h2>1. The rate of change of flux through the coil is proportional to the velocity of the</h2></b></p>
+                                  <input type="radio" id="ab" name="question1" value="a"> <label>Arc</label><br>
+                                  <input type="radio" id="ab" name="question1" value="b"> <label>Magnet</label><br>
+                                  <input type="radio" id="ab" name="question1" value="c"> <label> both</label><br>
+                                  <input type="radio" id="ab" name="question1" value="d"> <label>None</label><br>
+                                   <div id="answer1" style="visibility: hidden;"> </div><br><br>
+                                  <p><b><h2>2. If I is the moment of inertia of the oscillatory system and ω is the angular velocity of the magnet, then the kinetic energy and potential energy of the system is , where L is the effective length of the corresponding simple pendulum</h2></b></p>
+                                  <input type="radio" id="ab" name="question2" value="a"> <label><sup>I&omega;<sup>2</sup></sup>&frasl;<sub>2</sub> and MgL</label><br>
+                                  <input type="radio" id="ab" name="question2" value="b"> <label>I&omega;<sup>2</sup> and MgL(1-cosθ)</label><br>
+                                  <input type="radio" id="ab" name="question2" value="c"> <label><sup>I&omega;<sup>2</sup></sup>&frasl;<sub>2</sub> and MgL(1-cosθ)</label><br>
+                                  <input type="radio" id="ab" name="question2" value="d"> <label>I&omega;<sup>2</sup> and MgL</label><br>
+                                   <div id="answer2" style="visibility: hidden;"> </div><br><br>
+                                  <p><b><h2>3. &omega;<sub>max</sub> is equal to</h2></b></p>
+                                  <input type="radio" id="ab" name="question3" value="a"> <label>4πsin(<sup>&theta;<sub>&deg;</sub></sup>&frasl;<sub>2</sub>)/T </label><br>
+                                  <input type="radio" id="ab" name="question3" value="b"> <label>4πLsin(<sup>&theta;<sub>&deg;</sub></sup>&frasl;<sub>2</sub>)/T</label><br>
+                                  <input type="radio" id="ab" name="question3" value="c"> <label>πLsin(<sup>&theta;<sub>&deg;</sub></sup>&frasl;<sub>2</sub>)/T</label><br>
+                                  <input type="radio" id="ab" name="question3" value="d"> <label>πsin(<sup>&theta;<sub>&deg;</sub></sup>&frasl;<sub>2</sub>)/T</label><br>
+                                   <div id="answer3" style="visibility: hidden;"> </div><br><br>
+                                  <p><b><h2>4.  once a capacitor attains a voltage , current can flow through the capacitor only if the induced emf is</h2></b></p>
+                                  <input type="radio" id="ab" name="question4" value="a"> <label>Greater than</label> <br>
+                                  <input type="radio" id="ab" name="question4" value="b"> <label>Less than</label><br>
+                                  <input type="radio" id="ab" name="question4" value="c"> <label>Equal to</label> <br>
+                                  <input type="radio" id="ab" name="question4" value="d"> <label>Greater than or equal to </label><br>
+                                   <div id="answer4" style="visibility: hidden;"> </div><br><br>
+                                  <p><b><h2>5. If the time constant RC is not small compared to the time taken for the magnet to cross the coil, the capacitor does not get fully charged in</h2></b></p>
+                                  <input type="radio" id="ab" name="question5" value="a"> <label>AC signal</label><br>
+                                  <input type="radio" id="ab" name="question5" value="b"> <label>DC signal</label><br>
+                                  <input type="radio" id="ab" name="question5" value="c"> <label>Both </label><br>
+                                  <input type="radio" id="ab" name="question5" value="d"> <label>None</label><br>
+                                   <div id="answer5" style="visibility: hidden;"> </div><br><br>
+                                  <p><b><h2>6. When the magnet is at its mean position, then ω = ωmax or velocity is at its maximum since Vmax = ωmax R. However, d/d =</h2></b></p>
+                                  <input type="radio" id="ab" name="question6" value="a"> <label>0 </label><br>
+                                  <input type="radio" id="ab" name="question6" value="b"> <label>1 </label><br>
+                                  <input type="radio" id="ab" name="question6" value="c"> <label>&theta; </label><br>
+                                  <input type="radio" id="ab" name="question6" value="d"> <label>None</label><br>
+                                   <div id="answer6" style="visibility: hidden;"> </div><br><br>
+                                  <p><b><h2>7. A plot of the slope of ε(t) at the zero, corresponding to the mean position against (Vmax)^2 would be</h2></b></p>
+                                  <input type="radio" id="ab" name="question7" value="a"> <label>Curved </label><br>
+                                  <input type="radio" id="ab" name="question7" value="b">  <label>Linear </label><br>
+                                  <input type="radio" id="ab" name="question7" value="c"> <label>Circular </label><br>
+                                  <input type="radio" id="ab" name="question7" value="d"> <label>Hyperbolic  </label><br>
+                                   <div id="answer7" style="visibility: hidden;"> </div><br><br>
+                                  <p><b><h2>8. We observe that the successive oscillations are not of the same amplitude. This is due to damping. Possible sources are</h2></b></p>
+                                  <input type="radio" id="ab" name="question8" value="a"> <label>Air resistance </label><br>
+                                  <input type="radio" id="ab" name="question8" value="b"> <label>Friction at the point of suspension </label><br>
+                                  <input type="radio" id="ab" name="question8" value="c"> <label>Induced emf (Lenz’s law).</label> <br>
+                                  <input type="radio" id="ab" name="question8" value="d"> <label>All of the above</label><br>
+                                   <div id="answer8" style="visibility: hidden;"> </div><br><br>
+                                 <input id="button1" type="button" value="Check Answers" onclick="compare()">
+                                  <input id="button" type="button" value="Check Result" onclick="check()">
+                                </form>
+                            </div>
+                        </div><!--end of tab content-->
+                </div><!--end container-->
+            </div><!--end of row-->
+        </div><!--end of container-fluid-->
+
+        <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    </body>
+</html>

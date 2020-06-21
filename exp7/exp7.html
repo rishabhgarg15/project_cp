@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+<title>Classical Physics</title>
+<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="https://aashish157.github.io/Physics-Lab-Website/resources/images/book.png">
+<link rel="stylesheet" type="text/css" href="https://aashish157.github.io/Physics-Lab-Website/resources/images/refresh.png">
+<link rel="stylesheet" type="text/css" href="https://aashish157.github.io/Physics-Lab-Website/resources/images/videocam.png">
+<link rel="stylesheet" type="text/css" href="https://aashish157.github.io/Physics-Lab-Website/resources/images/resources.png">
+<link rel="stylesheet" type="text/css" href="https://aashish157.github.io/Physics-Lab-Website/resources/images/viva.png">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="exp7.css">
+  <script type="text/javascript" src="exp7.js"></script>
+
+
+
+<style>
+
+  .videom{
+
+      padding-bottom: 12px;
+
+  }
+</style>
+
+<script type="text/javascript">
+  // Prevent dropdown menu from closing when click inside the form
+  $(document).on("click", ".navbar-right .dropdown-menu", function(e){
+    e.stopPropagation();
+  });
+</script>
+</head>
+<body>
+
+
+
+
+<nav class="navbar navbar-default navbar-expand-lg navbar-light">
+  <div class="navbar-header d-flex col">
+    <a class="navbar-brand" href="#">CLASSICAL<b>PHYSICS</b></a>
+    <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle navbar-toggler ml-auto">
+      <span class="navbar-toggler-icon"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+  </div>
+  <!-- Collection of nav links, forms, and other content for toggling -->
+  <div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">
+    <ul class="nav navbar-nav">
+      <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+      <li class="nav-item dropdown">
+        <a data-toggle="dropdown" class="nav-link dropdown-toggle" href="#">Services <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><a href="#" class="dropdown-item">xxcx</a></li>
+          <li><a href="#" class="dropdown-item">Web</a></li>
+          <li><a href="#" class="dropdown-item">yyy</a></li>
+          <li><a href="#" class="dropdown-item">zzz</a></li>
+        </ul>
+      </li>
+      <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+    </ul>
+ <!--    <form class="navbar-form form-inline">
+      <div class="input-group search-box">
+        <input type="text" id="search" class="form-control" placeholder="Search here...">
+        <span class="input-group-addon"><i class="material-icons">&#xE8B6;</i></span>
+      </div>
+    </form> -->
+     <ul class="nav navbar-nav navbar-right ml-auto">
+            <li class="nav-item">
+                <a data-toggle="dropdown" class="nav-link dropdown-toggle" href="#">Login</a>
+                <ul class="dropdown-menu form-wrapper">
+                    <li>
+                        <form action="/examples/actions/confirmation.php" method="post">
+                            <p class="hint-text">Sign in with your social media account</p>
+                            <div class="form-group social-btn clearfix">
+                                <a href="#" class="btn btn-primary pull-left"><i class="fa fa-facebook"></i> Facebook</a>
+                                <a href="#" class="btn btn-info pull-right"><i class="fa fa-twitter"></i> Twitter</a>
+                            </div>
+                            <div class="or-seperator"><b>or</b></div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Username" required="required">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Password" required="required">
+                            </div>
+                            <input type="submit" class="btn btn-primary btn-block" value="Login">
+                            <div class="form-footer">
+                                <a href="#">Forgot Your password?</a>
+                            </div>
+                        </form>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="#" data-toggle="dropdown" class="btn btn-primary dropdown-toggle get-started-btn mt-1 mb-1">Sign up</a>
+                <ul class="dropdown-menu form-wrapper">
+                    <li>
+                        <form action="/examples/actions/confirmation.php" method="post">
+                            <p class="hint-text">Fill in this form to create your account!</p>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Username" required="required">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Password" required="required">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Confirm Password" required="required">
+                            </div>
+                            <div class="form-group">
+                                <label class="checkbox-inline"><input type="checkbox" required="required"> I accept the <a href="#">Terms &amp; Conditions</a></label>
+                            </div>
+                            <input type="submit" class="btn btn-primary btn-block" value="Sign up">
+                        </form>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</nav>
+        <div class="container-fluid">
+            <div class="col-md-12 row">
+                <div class="container">
+                  <h1><b> <u>Gyroscope</u></b></h1>
+
+                    <!----NAV TABS ---->
+                    </br>
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a data-toggle="tab" href="#home">
+                            <img src="https://aashish157.github.io/Physics-Lab-Website/resources/images/book.png">
+                            <b>Theory</b></a></li>
+                        <li><a data-toggle="tab" href="#menu1">
+                            <img src="https://aashish157.github.io/Physics-Lab-Website/resources/images/refresh.png">
+                            <b>Procedure</b></a></li>
+                        <li><a data-toggle="tab" href="#menu2">
+                            <img src="https://aashish157.github.io/Physics-Lab-Website/resources/images/videocam.png">
+                            <b>Video</b></a></li>
+                        <li><a data-toggle="tab" href="#menu3">
+                            <img src="https://aashish157.github.io/Physics-Lab-Website/resources/images/resources.png">
+                            <b>Resources</b></a></li>
+                        <li><a data-toggle="tab" href="#menu4">
+                            <img src="https://aashish157.github.io/Physics-Lab-Website/resources/images/viva.png">
+                            <b>Viva Voce</b></a></li>
+                    </ul>
+
+                        <div class="tab-content">
+                            <div id="home" class="tab-pane fade in active">
+                                <br><h2><b>Aim :</b></h2>
+                                <p>To find the moment of inertia of gyroscope by measuring the precession frequency as a
+                                      function of spin frequency of gyroscope.</p><br>
+                                <h2><b>Theory :</b></h2>
+                                <p>Gyroscopes are used in compasses, in the steering mechanism of torpedoes and in inertial
+                                    guidance systems. The objective is to find the moment of inertia of the gyroscope by
+                                    measuring the precession frequency, as a function of the spin frequency of the gyroscope.
+                                    The gyroscope that is free to rotate about all the three axes is balanced in horizontal
+                                    position with the help of a counter weight C as shown in Fig. 7.1. As soon as a small
+                                    weight is added on the left hand side of counter weight C, the gyroscope destabilizes and
+                                    falls down. Remove the extra small weight, balance it again as before and spin the disk
+                                    of the gyroscope with some angular velocity. Now hang the small weight again on the
+                                    left hand side as before. The gyroscope now shows a completely new behavior and starts
+                                    rotating in a direction perpendicular to the previous plane. This movement is known as
+                                    precession. That is how a gyroscope increases the stability of a system. Try to explain
+                                    this behavior using laws of mechanics. Can you cite some example from our everyday life
+                                    where you see actual demonstration of this gyroscopic phenomenon?</p>
+                                    <p>If I is the moment of inertia of the gyroscope about its symmetric axis, the angular
+                                        momentum L is given by,</p>(7.1)
+                                    <p align="center">L = Iωg</p>
+                                    <p>where ωg is the angular velocity of the spinning gyroscope. Now, the addition of an
+                                    additional weight m, at a distance r from the pivot point P, introduces a supplementary
+                                    torque T</p>
+                                    <p></p>(7.2)
+<p align="center"><img src="https://aashish157.github.io/Physics-Lab-Website/resources/images/e6/e6.1.jpg"></p>
+<p>The gyroscope now starts precising with frequency ωp under the influence of T . Since T is
+perpendicular to L its effect is to change the direction of L. In a time dt, L will rotate by</p>
+<p align="center"><img src="https://aashish157.github.io/Physics-Lab-Website/resources/images/e6/e6.2.jpg" class="img-responsive"></p>
+<p align="center">Figure 6.1: Gyroscope experimental setup</p>
+<p>dΦ, given by</p>(7.3)
+<p align="center"><img src="https://aashish157.github.io/Physics-Lab-Website/resources/images/e6/e6.3.jpg"></p>(7.4)
+
+<p align="center"><img src="https://aashish157.github.io/Physics-Lab-Website/resources/images/e6/e6.4.jpg" class="img-responsive"></p>
+<p>where we have used Eqns. 7.1, 7.2 and 7.3. If Tp is the time for one precession revolution
+and T is the time taken by the gyroscope to spin about its axis (one rotation) then</p>(7.5)
+<p align="center"><img src="https://aashish157.github.io/Physics-Lab-Website/resources/images/e6/e6.5.jpg"></p>(7.6)
+<p align="center"><img src="https://aashish157.github.io/Physics-Lab-Website/resources/images/e6/e6.6.jpg"></p>
+<p>Therefore from Eqn. 7.4,</p>(7.7)
+<p align="center"><img src="https://aashish157.github.io/Physics-Lab-Website/resources/images/e6/e6.7.jpg"></p>
+<p>Thus a plot of 1/Tg vs Tp should yield a straight line for a fixed m, from which the moment
+of inertia I of the gyroscope, can be obtained.</p>
+
+                            </div>
+                            <div id="menu1" class="tab-pane fade">
+                              <br><h2><b>Apparatus Required :</b></h2>
+                              <p>Gyroscope, tachometer, stopwatch, weights.</p>
+                              <h2><b>Procedure :</b></h2>
+                              <p>Balance the gyroscope horizontally, using the counterweight C, without any weight m.</p>
+                              <p>1. Give a spin to the horizontal balanced gyroscope and measure the time (Tg) required
+                                    to complete one revolution using the given light barrier counter.</p>
+                              <p>2.Immediately after this, hand a mass m into the groove at the longer end of the
+                                    gyroscope. This is at a distance r = 27cm. The gyroscope will precess. Using the
+                                    stop watch, measure the duration of half the rotation Tp/2.</p>
+                              <p>3.Without any delay, remove the mass m, so that gyroscope stops processing, and
+                                    measure Tg again, using the light barrier counter.</p>
+                              <p>4.The average of Tg measured in steps (1) and (3) above is to be used in Eq. (7.7).</p>
+                              <p>5.Repeat for several different initial spins of the gyroscope and fixed m and plot 1/Tg
+                                    vs Tp and find the slope. Find I using Eq. (7.7).</p>
+                              <p>6. Find I for another value of m.</p>
+
+                              <p><h2><b>Observation :</b></h2></p>
+                              <p>For mass m = ...... gm.</p>
+                              <p align="center"><img src="https://aashish157.github.io/Physics-Lab-Website/resources/images/e6/e6.8.jpg" class="img-responsive"></p>(7.8)
+                              <p align="center">where,    ωgr = (ωg1 + ωg2)/2</p>(7.9)
+                              <p align="center"> ωg = 2π(ωgr/60)</p>(7.10)
+                              <p align="center">Tg = 2π/ωg </p>(7.10)
+                              <p>Repeat your observations for another mass.</p>
+
+                              <p><h2><b>Calculation :</b></h2></p>
+                              <p>Plot a graph of 1/Tg vs Tp for both masses on the same graph paper using the same
+                                  axes. The graphs should be a straight line passing through origin. Find the slope (s) and
+                                  calculate the moment of inertia of the gyroscope from the obtained slope values.</p> (7.11)
+                              <p align="center"> I = mgr/4π2s</p>
+
+                              <p><h2><b>Results :</b></h2></p>
+                             <p>Moment of inertia of the gyroscope</p>
+                             <p>1.For mass m1 = ......... kg m2.</p>
+                             <p>2. For mass m2 = ........ kg m2.</p>
+                            </div>
+                            <div id="menu2" class="tab-pane fade">
+                              <h2>VIDEO</h2>
+                              <p align="center" style="height: 200px"> CURRENTLY NOT AVAILABLE
+                                <br><img src="https://aashish157.github.io/Physics-Lab-Website/resources/images/sad_emoji.png" style="height: 100px"><!--iframe width="500vw" height="280vh" src="https://www.youtube-nocookie.com/embed/34VvJvlhvq0?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe--></p><br>
+                            </div>
+                            <div id="menu3" class="tab-pane fade">
+                              <h2>RESOURCES</h2>
+                              <p><b>1. <a href="https://studylib.net/doc/5443959/lecture-24.gyroscope.." target="_blank">
+                              https://studylib.net/doc/5443959/lecture-24.gyroscope..</a><br><br>
+                                2. <a href="https://www.careerride.com/mcq-tag-wise.aspx?Key=Gyroscope&Id=16" target="_blank">https://www.careerride.com/mcq-tag-wise.aspx?Key=Gyroscope&Id=16</a><br><br>
+                                3. <a href="https://www.sanfoundry.com/machine-dynamics-questions-answers-gyroscopic-couple/" target="_blank">https://www.sanfoundry.com/machine-dynamics-questions-answers-gyroscopic-couple/</a><br><br>
+                                 4.  <a href="https://www.youtube.com/watch?v=ty9QSiVC2g0" target="_blank">https://www.youtube.com/watch?v=ty9QSiVC2g0</a><br><br>
+                                </b></p>
+
+                            </div>
+                            <div id="menu4" class="tab-pane fade">
+                              <h2><b>VIVA VOCE</b></h2>
+                              <p id="quiz_heading">-Check Yourself-</p>
+
+                                <form id="quiz" name="quiz">
+                                  <p><b><h2>1. The general equation that relates the torque to the rate of change of angular momentum is:</h2></b></p>
+                                  <input type="radio" id="ab" name="question1" value="a"> <label> てdt=dL</label> <br>
+                                  <input type="radio" id="ab" name="question1" value="b"> <label> てdL=dt</label><br>
+                                  <input type="radio" id="ab" name="question1" value="c"> <label> て=dt.dL</label><br>
+                                  <input type="radio" id="ab" name="question1" value="d"> <label> None of the above</label><br>
+                                  <div id="answer1" style="visibility: hidden;">Correct Answer is A </div>
+                                  <p><b><h2>2. In torque-free precession</h2></b></p>
+                                  <input type="radio" id="ab" name="question2" value="a"> <label> Angular momentum and angular velocity is constant</label><br>
+                                  <input type="radio" id="ab" name="question2" value="b"> <label> Angular velocity is constant and angular momentum vector changes orientation with time</label></label><br>
+                                  <input type="radio" id="ab" name="question2" value="c"> <label> Angular momentum is constant and angular velocity  vector changes orientation with time</label><br>
+                                  <input type="radio" id="ab" name="question2" value="d"> <label> Both  vector changes orientation with time</label><br>
+                                  <div id="answer2" style="visibility: hidden;">Correct Answer is C </div>
+                                  <p><b><h2>3. The angular velocity of the precession is given by:</h2></b></p>
+                                  <input type="radio" id="ab" name="question3" value="a"> <label> Ω =Mgω/Ir </label><br>
+                                  <input type="radio" id="ab" name="question3" value="b"> <label> Ω =dt/dӨ</label><br>
+                                  <input type="radio" id="ab" name="question3" value="c"> <label>Ω =Mgr/L</label><br>
+                                  <input type="radio" id="ab" name="question3" value="d"> <label> Ω =Mg/Iω</label><br>
+                                  <div id="answer3" style="visibility: hidden;">Correct Answer is C </div>
+                                  <p><b><h2>4. Uses of Gyroscopes</h2></b></p>
+                                  <input type="radio" id="ab" name="question4" value="a"> <label> Navigation </label><br>
+                                  <input type="radio" id="ab" name="question4" value="b"> <label> Satellites</label><br>
+                                  <input type="radio" id="ab" name="question4" value="c"> <label> Racing cars </label><br>
+                                  <input type="radio" id="ab" name="question4" value="d"> <label> All of the above </label><br>
+                                  <div id="answer4" style="visibility: hidden;">Correct Answer is D </div>
+                                  <p><b><h2>5. A student sits on a spinning stool with her arms folded.  When she extends her arms away from her body, her kinetic energy</h2></b></p>
+                                  <input type="radio" id="ab" name="question5" value="a"> <label> Increases</label><br>
+                                  <input type="radio" id="ab" name="question5" value="b"> <label> Decreases</label><br>
+                                  <input type="radio" id="ab" name="question5" value="c"> <label> Stays the same </label><br>
+                                  <input type="radio" id="ab" name="question5" value="d"> <label> Depends on her mass </label><br>
+                                  <div id="answer5" style="visibility: hidden;">Correct Answer is B </div>
+                                  <p><b><h2>6. Gyroscopic effect is not observed in which of the following actions performed by the ships?</h2></b></p>
+                                  <input type="radio" id="ab" name="question6" value="a"> <label>  Rolling </label><br>
+                                  <input type="radio" id="ab" name="question6" value="b"> <label>  Pitching </label> <br>
+                                  <input type="radio" id="ab" name="question6" value="c"> <label> Steering</label> <br>
+                                  <input type="radio" id="ab" name="question6" value="d"> <label> All of the above</label><br>
+                                  <div id="answer6" style="visibility: hidden;">Correct Answer is A </div>
+                                  <p><b><h2>7. What is the effect of reactive gyroscopic couple when an aeroplane takes a right turn and propeller rotates in anticlockwise direction?</h2></b></p>
+                                  <input type="radio" id="ab" name="question7" value="a"> <label> The nose and tail of the aeroplane are in horizontal plane</label> <br>
+                                  <input type="radio" id="ab" name="question7" value="b"> <label> The nose of the aeroplane is raised and tail is dipped </label><br>
+                                  <input type="radio" id="ab" name="question7" value="c"> <label> The nose of the aeroplane is dipped and tail is raised </label><br>
+                                  <input type="radio" id="ab" name="question7" value="d"> <label> None of the above</label> <br>
+                                  <div id="answer7" style="visibility: hidden;">Correct Answer is C</div>
+                                  <p><b><h2>8. The axis of precession is ____________ to the plane in which the axis of spin is going to rotate</h2></b></p>
+                                  <input type="radio" id="ab" name="question8" value="a"> <label> parallel </label><br>
+                                  <input type="radio" id="ab" name="question8" value="b"> <label> Perpendicular </label><br>
+                                  <input type="radio" id="ab" name="question8" value="c"> <label> spiral </label><br>
+                                  <input type="radio" id="ab" name="question8" value="d"> <label> none of the mentioned </label><br>
+                                  <div id="answer8" style="visibility: hidden;">Correct Answer is B </div><br><br>
+                                  <input id="button1" type="button" value="Check Answers" onclick="compare()">
+                                  <input id="button"  type="button" value="Check Result" onclick="check()">
+                                </form>
+                            </div>
+                    </div><!--end of tab content-->
+                </div><!--end container-->
+            </div><!--end of row-->
+        </div><!--end of container-fluid-->
+
+
+        <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    </body>
+</html>
