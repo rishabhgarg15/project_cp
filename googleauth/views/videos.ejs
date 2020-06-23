@@ -1,0 +1,65 @@
+<%- include('partials/header') %>
+<meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+<title>Videos</title>
+
+<link rel="stylesheet" href="/public/stylesheet/videos.css">
+</head> 
+<body>
+
+
+  
+<%- include('partials/navbar') %>
+
+
+
+
+ <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+
+
+
+  <!--Grid row-->
+
+  <div class="container videom">
+
+    <h1> VIDEO LECTURES</h1>
+
+
+<div class="row mb-5">
+
+	<% videos.forEach(function(video){ %>
+  <!--Grid column-->
+  <div class="col-lg-4 col-md-12">
+
+    <p class="h5 mb-4"><%= video.name %></p>
+
+    <div class="embed-responsive embed-responsive-16by9 z-depth-1">
+      
+        <iframe class="embed-responsive-item" height="101%" src="<%=video.vLink%>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+			<% if(user&&user.admin) {%>    
+                                    <form action="/delete/video/<%=video._id%>?_method=delete" method="post">
+                                           <button class="btn btn-lg btn-danger">Remove Video</button>
+                                    </form>
+                            <% } %>
+
+                           
+
+
+  </div>
+     <%  }) %>
+  <!--Grid column-->
+
+
+
+</div>
+  <!--Grid row-->
+
+</div>
+
+
+
+
+
+    <section>This is used to make page to cover full page otherwise footer not be at end , As content is not placed till now. We will remove it afterwards.</section>
+
+<%- include('partials/footer') %>

@@ -1,5 +1,16 @@
 <%- include('partials/header') %>
 
+<title>Write title for each page here</title>
+
+<!-- Here you we will include other css and js files that are not to be used for every age -->
+
+
+</head>
+<body>
+
+<%- include('partials/navbar') %>
+	
+
 
 	<h1>This is Home Page</h1>
 
@@ -12,13 +23,22 @@
     
     <% } %>
 
+        <% if(user&&user.admin) {%>    
+
+   
+
+	<a href="/addVideo" class="btn btn-lg btn-danger">Add Video Lecture Link</a> 
+    
+    <% } %>
 
 
 	<h2>
 		From Here you can download our resources.
 	</h2>
-		<a href="/download" class="btn btn-lg btn-secondary">See Our resources</a>
+		<a href="/resources" class="btn btn-lg btn-primary ">See Our resources</a>
 
+
+		<section>This is used to make page to cover full page otherwise footer not be at end , As content is not placed till now. We will remove it afterwards.</section>
 
 <%- include('partials/footer') %>
 

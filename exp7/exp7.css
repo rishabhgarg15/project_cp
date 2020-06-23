@@ -1,0 +1,23 @@
+body
+{
+
+		font-family: 'Varela Round', sans-serif;
+		background-color: rgb(35, 38, 41);
+	    color:white;
+	}
+
+.container{
+	font-family: helvetica neue, helvetica arial, sans-serif;
+	font-size: 24px;
+}
+
+#button1{
+	color:white;
+	background-color: green;
+}
+
+#button{
+	color:white;
+	background-color: green;
+
+}

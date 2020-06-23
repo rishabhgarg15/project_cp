@@ -7,6 +7,7 @@ const passportSetup = require('./configure/passportsetup');
 const mongoose = require('mongoose');
 const keys = require('./configure/keys');
 const FileName = require('./models/filename');
+const VideoLink = require('./models/videolink');
 const fs = require('fs');
 const methodOverride=require("method-override");
 const bodyParser=require("body-parser");
@@ -29,7 +30,8 @@ app.use(flash());
 // set view engine
 app.set('view engine', 'ejs');
 
-app.use(express.static(__dirname+'/upload'));
+app.use("/upload",express.static(__dirname+'/upload'));
+app.use("/public",express.static(__dirname+'/public'));
 
 // set up session cookies
 app.use(cookieSession({
@@ -42,7 +44,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 app.use(function(req,res,next){
-    res.locals.currentUser=req.user;
+    res.locals.user=req.user;
     res.locals.error=req.flash("error");
     res.locals.success=req.flash("success");
     next();
@@ -61,7 +63,7 @@ app.use('/profile', profileRoutes);
 
 // create home route
 app.get('/', (req, res) => {
-    res.render('home', { user: req.user });
+    res.render('home');
 });
 
 
@@ -88,12 +90,23 @@ const verifyAdmin=function(req,res,next){
         }
 };
 
+
+
+const getIdOfYoutubeLink = function (url) {
+    const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|&v=)([^#&?]*).*/;
+    const match = url.match(regExp);
+
+    return (match && match[2].length === 11)
+      ? match[2]
+      : null;
+}
+
 app.use('/upload',authCheck,verifyAdmin);
 app.use('/delete',authCheck,verifyAdmin);
-
+app.use('/addVideo',authCheck,verifyAdmin);
 
 app.get('/upload', (req, res) => {
-    res.render('upload',{ user: req.user });
+    res.render('upload');
 });
 
 
@@ -103,6 +116,7 @@ app.post("/upload",function(req,res){
 		var file=req.files.filename,
 			name=file.name;
 
+		var field = req.body.field_val;
 
 
 			FileName.findOne({fname: name}, function(err,fl){
@@ -110,20 +124,38 @@ app.post("/upload",function(req,res){
 					res.send("Already present a file with this name.")
 				}else {
 
-						FileName.create({fname:name},function(err,filename){
+
+							var lastDot = name.lastIndexOf('.');
+
+ 						 	var  onlyname = name.substring(0, lastDot);
+
+						FileName.create({fname:name,fieldname:field,name: onlyname},function(err,filename){
 								if(err){
 									console.log(err);
+									res.send("Something went wrong try again to upload!");
 								}else {
-									console.log(filename);	
+									console.log(filename);
+
 								}
 						});
 
 							file.mv("./upload/"+name,function(err){
 						if(err){
 							console.log(err);
+							FileName.remove({fname:name},function(err){
+								if(err){
+									console.log(err);
+									}else {
+										console.log(name+ " Removed from database as file cannot be uploaded");
+									}
+							});
+
 							res.send("Something went wrong");
+
+
+
 						}else{
-							res.render("uploadsuccessfull",{user: req.user});
+							res.render("uploadsuccessfull");
 
 						}
 
@@ -131,35 +163,114 @@ app.post("/upload",function(req,res){
 				}
 			});
 
-			
+
 
 	}else{
 		res.send("Cannot upload your file!");
 	}
-		
+
+});
+
+app.get('/addVideo', (req, res) => {
+    res.render('addVideo');
+});
+
+app.post('/addVideo', (req, res) => {
+    var vlink=req.body.videolink;
+    var field=req.body.field_val;
+    var nametoshow=req.body.showname;
+
+
+    var videoId = getIdOfYoutubeLink(vlink);
+    var vlinkfinal='http://www.youtube.com/embed/'+videoId;
+
+    VideoLink.findOne({vLink:vlinkfinal}, function(err,link){
+				if(link!==null){
+					res.send("Already present a link with this name !")
+				}else {
+
+						VideoLink.create({vLink:vlinkfinal,fieldname:field,name:nametoshow},function(err,link){
+								if(err){
+									console.log(err);
+									res.send("Something went wrong try again to ADD link later!");
+								}else {
+									console.log(link);
+									res.redirect("/");
+								}
+						});
+					}
+				});
+
 });
 
 
 
+// app.get("/download",function(req,res){
 
-app.get("/download",function(req,res){
+// 	FileName.find({},function(err,files){
+// 		if(err)
+// 		{
+// 			res.send("Error in Displaying files.");
+// 		}else {
 
-	FileName.find({},function(err,files){
-		if(err)
-		{
-			res.send("Error in Displaying files.");
+// 			res.render("download",{user: req.user,files:files});
+// 		}
+// 	});
+
+// });
+
+
+
+app.get("/resources",function(req,res){
+	res.render("tableofcontents",{user: req.user});
+});
+
+app.get("/contact",function(req,res){
+	res.render("contact");
+});
+
+app.get("/instructor",function(req,res){
+	res.render("instructor");
+});
+
+app.get("/team",function(req,res){
+	res.render("team");
+});
+
+
+app.get("/resources/:cid/notes",function(req,res){
+	var field = req.params.cid;
+	console.log(field);
+	FileName.find({fieldname:field},function(err,files){
+		if(err){
+			res.send("Something went wrong");
 		}else {
-
-			res.render("download",{user: req.user,files:files});
+			// console.log(files);
+			res.render("notes",{files:files});
 		}
 	});
 
-});	
+});
+
+app.get("/resources/:cid/videos",function(req,res){
+		var field = req.params.cid;
+		VideoLink.find({fieldname:field},function(err,videos){
+		if(err){
+			res.send("Something went wrong");
+		}else {
+			// console.log(videos);
+			res.render("videos",{videos:videos});
+		}
+	});
 
 
 
+});
 
-app.delete("/delete/:id/:name",function(req,res){
+
+
+//Delete Notes File
+app.delete("/delete/notes/:id/:name",function(req,res){
 	//find and delete file
 
 
@@ -180,19 +291,31 @@ fs.unlink(path, (err) => {
 			res.redirect("/");
 		}
 	});
-	
+
 }
-	
-});
 
 });
 
+});
+
+
+
+
+
+
+//Delete Youtube Video
+app.delete("/delete/video/:id",function(req,res){
+		VideoLink.findByIdAndDelete(req.params.id,function(err){
+		if(err){
+			res.redirect("/");
+		}else{
+			console.log("Removed Youtube Video");
+			res.redirect("/");
+		}
+	});
+});
 
 
 app.listen(3000, () => {
     console.log('app now listening for requests on port 3000');
 });
-
-
-
-
