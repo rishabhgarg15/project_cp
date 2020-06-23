@@ -1,4 +1,4 @@
- var answers=["a","c","c","d","b","a","c","b"];
+ var answers=["b","a","d","d","b","a","a","a"];
  var q=["z","z","z","z","z","z","z","z"];
 function clearRadioGroup(GroupName)
 {
@@ -50,12 +50,16 @@ function check(){
 	}
 	
 
+	
+	
 	Swal.fire({
 		title:"Correct Answers  : " +count,
 		width:'800px',
-		
+
 	});
-	
+
+
+
 
 }
 
