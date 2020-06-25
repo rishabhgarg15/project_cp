@@ -1,3 +1,5 @@
+
+
 const express = require('express');
 const cookieSession = require('cookie-session');
 const passport = require('passport');
@@ -237,6 +239,13 @@ app.get("/team",function(req,res){
 	res.render("team");
 });
 
+//experiments
+app.get('/experiments/:exp',function(req,res){
+   var exp = req.params.exp;
+   res.render("experiments/"+exp);
+});
+
+//exp end
 
 app.get("/resources/:cid/notes",function(req,res){
 	var field = req.params.cid;
