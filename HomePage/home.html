@@ -3,23 +3,47 @@
 <head>
 <!--<link rel = "stylesheet" href="con.css">-->
 <style>
-	#mainer{
+	.mainer{
 	background-image : url("back.png");
 	background-repeat: no-repeat;
+	height: 100vh;
+    width: 100%;
 	margin-bottom: 15px;
 	margin-top: -20px;
 	position: relative;
     font-family: Heletica;
     text-transform: uppercase;
     font-weight: lighter;
-}
+    justify-content: center;
+} 
 .modifier h1{
     
 	text-align: center;
 	color:rgb(157, 202, 198);
 	padding-top: 15vh;
 	margin-bottom: 20vh;
+} /*
+.mainer { 
+    position: relative; 
+    height: 100vh;
+    width: 100%;
+    margin-bottom: 15px;
+	margin-top: -20px;
+    align-items: center;
+    justify-content: center;
+    background-image: url('back.png');
+    background-size: cover;
 }
+
+.mainer::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.25);
+} */
 .modifier h2{
 	text-align: center;
 	color:rgb(208, 241, 85);
@@ -32,6 +56,7 @@
 	width:20vw;
 	font-size: 1em;
 	margin-left: 40vw;
+	cursor: pointer;
 }
 </style>
 <meta charset="utf-8">
@@ -107,7 +132,7 @@
 	</div>
 </div>
 
-<main id="mainer">
+<main class="mainer">
 <div class="modifier">
 
 
