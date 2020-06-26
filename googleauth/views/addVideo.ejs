@@ -1,6 +1,6 @@
 <%- include('partials/header') %>
 
-<title>Write title for each page here</title>
+<title>Upload Videos</title>
 
 <!-- Here you we will include other css and js files that are not to be used for every age -->
 
@@ -8,16 +8,18 @@
 <body>
 
 <%- include('partials/navbar') %>
-	
 
 
-	<h1>Add New Video Link</h1>
-	<form method="post" action="/addVideo">
-		<input type="text" name="videolink" placeholder="link of video" required>
-		
-		<input type="text" name="showname" placeholder="Write display name for this video" required>
+<center>
 
-		<select id="fieldnames" name="field_val">
+	<h1 style="color:black;font-size:45px;text-shadow:2px 1px 1px grey">Add New Video Link</h1>
+	<form method="post" style="border: 1px dotted grey; width:500px;height:400px; background-color:lightblue" action="/addVideo">
+			<br /><br /><br /><br />
+		<input type="text" name="videolink" class="btn btn-lg btn-danger" placeholder="link of video" style="width:400px;height:60px;color:black;background-color:pink" required>
+<br /><br />
+		<input type="text" name="showname" class="btn btn-lg btn-danger" placeholder="Write display name for this video" style="width:400px;height:60px;color:black;background-color:pink" required>
+<br /><br />
+		<select id="fieldnames" class="btn btn-lg btn-danger" name="field_val">
 			<option val="chapter1">Chapter1</option>
 			<option val="chapter2">Chapter2</option>
 			<option val="chapter3">Chapter3</option>
@@ -30,16 +32,17 @@
 			<option val="chapter10">Chapter10</option>
 			<option val="chapter11">Chapter11</option>
 			<option val="chapter12">Chapter12</option>
-		
+
 		</select>
-		
-		<input type="submit" value="submit">
-	</form>	
+<br /><br /><br />
+		<input type="submit" class="btn btn-lg btn-primary" value="submit">
+	</form>
 
 
 
 
 
-		<section>This is used to make page to cover full page otherwise footer not be at end , As content is not placed till now. We will remove it afterwards.</section>
+	</center>
+		<section></section>
 
 <%- include('partials/footer') %>

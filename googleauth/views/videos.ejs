@@ -3,11 +3,11 @@
 <title>Videos</title>
 
 <link rel="stylesheet" href="/public/stylesheet/videos.css">
-</head> 
+</head>
 <body>
 
 
-  
+
 <%- include('partials/navbar') %>
 
 
@@ -18,31 +18,35 @@
 
 
   <!--Grid row-->
-
+<center>
   <div class="container videom">
+
+
 
     <h1> VIDEO LECTURES</h1>
 
-
+<br /><br />
 <div class="row mb-5">
 
 	<% videos.forEach(function(video){ %>
   <!--Grid column-->
-  <div class="col-lg-4 col-md-12">
+  <div class="col-lg-4 col-md-12" style="margin-left:400px">
 
-    <p class="h5 mb-4"><%= video.name %></p>
+    <p class="h5 mb-4" style="color:black;font-size:45px;text-shadow:2px 1px 1px grey"><%= video.name %></p>
+</br></br>
 
     <div class="embed-responsive embed-responsive-16by9 z-depth-1">
-      
-        <iframe class="embed-responsive-item" height="101%" src="<%=video.vLink%>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <iframe class="embed-responsive-item" height="101%" src="<%=video.vLink%>" frameborder="3px" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
-			<% if(user&&user.admin) {%>    
+    <br /><br />
+			<% if(user&&user.admin) {%>
                                     <form action="/delete/video/<%=video._id%>?_method=delete" method="post">
                                            <button class="btn btn-lg btn-danger">Remove Video</button>
                                     </form>
                             <% } %>
 
-                           
+
 
 
   </div>
@@ -55,11 +59,11 @@
   <!--Grid row-->
 
 </div>
+</center>
 
 
 
 
-
-    <section>This is used to make page to cover full page otherwise footer not be at end , As content is not placed till now. We will remove it afterwards.</section>
+    <section></section>
 
 <%- include('partials/footer') %>

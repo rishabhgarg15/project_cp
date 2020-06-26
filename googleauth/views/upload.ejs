@@ -1,6 +1,6 @@
 <%- include('partials/header') %>
 
-<title>Write title for each page here</title>
+<title>Upload files</title>
 
 <!-- Here you we will include other css and js files that are not to be used for every age -->
 
@@ -8,12 +8,14 @@
 <body>
 
 <%- include('partials/navbar') %>
+<center>
 
-	<h1>Upload your file</h1>
-	<form method="post" enctype="multipart/form-data" action="/upload">
-		<input type="file" name="filename" required>
-
-		<select id="fieldnames" name="field_val">
+	<h1 style="color:black;font-size:45px;text-shadow:2px 1px 1px grey">Upload your file</h1><br /><br />
+	<form method="post" style="border: 1px dotted grey; width:500px;height:400px; background-color:lightblue"enctype="multipart/form-data" action="/upload">
+		<br /><br /><br /><br />
+		<input type="file" class="btn btn-lg btn-danger" name="filename" required>
+<br /><br />
+		<select id="fieldnames" class="btn btn-lg btn-danger" name="field_val">
 		<option val="chapter1">Chapter1</option>
 		<option val="chapter2">Chapter2</option>
 		<option val="chapter3">Chapter3</option>
@@ -26,17 +28,16 @@
 		<option val="chapter10">Chapter10</option>
 		<option val="chapter11">Chapter11</option>
 		<option val="chapter12">Chapter12</option>
-	
+
 
 		</select>
+<br /><br /><br /><br />
+		<input type="submit" class="btn btn-lg btn-primary" value="upload">
+	</form>
 
-		<input type="submit" value="upload">
-	</form>	
+	</center>
 
 
-
-		<section>This is used to make page to cover full page otherwise footer not be at end , As content is not placed till now. We will remove it afterwards.</section>
+		<section></section>
 
 <%- include('partials/footer') %>
-
-

@@ -2,14 +2,18 @@
 
 <title>NOTES</title>
 <link rel="stylesheet" href="/public/stylesheet/notes.css">
-</head> 
+</head>
 <body>
 
 
-  
+
 <%- include('partials/navbar') %>
 
-<div class="container">
+
+<center>
+
+<div class="container" style="margin-left:450px">
+
 <div class="row mb-5">
 
 
@@ -17,20 +21,20 @@
               <!--Grid column-->
               <div class="col-lg-6 col-md-12">
 
-            <p class="notesname"><%= file.name %> </p>
+            <p class="notesname" style="color:black;font-size:25px;text-shadow:2px 1px 1px grey"><%= file.fieldname %> </p>
             <div id="Iframe-Cicis-Menu-To-Go" class="set-margin-cicis-menu-to-go set-padding-cicis-menu-to-go set-border-cicis-menu-to-go set-box-shadow-cicis-menu-to-go center-block-horiz">
-              <div class="responsive-wrapper 
+              <div class="responsive-wrapper
                  responsive-wrapper-padding-bottom-90pct"
                  style="-webkit-overflow-scrolling: touch; overflow: auto;">
                  <iframe src="/upload/<%=file.fname%>">
 
                 </iframe>
 
-                        
+
               </div>
             </div>
-                <a class="btn btn-lg btn-primary" href="/upload/<%=file.fname%>" download="<%=file.fname%>">Download File</a>
-                            <% if(user&&user.admin) {%>    
+                <a class="btn btn-lg btn-primary" href="/upload/<%=file.fname%>" download="<%=file.fname%>">Download File</a><br /><br />
+                            <% if(user&&user.admin) {%>
                                     <form action="/delete/notes/<%=file._id%>/<%=file.fname%>?_method=delete" method="post">
                                            <button class="btn btn-lg btn-danger">Delete file</button>
                                     </form>
@@ -38,17 +42,17 @@
 
               </div>
             <%  }) %>
-              
 
 
 
     </div>
+
+
 </div>
 
+              </center>
 
 
-    <section>This is used to make page to cover full page otherwise footer not be at end , As content is not placed till now. We will remove it afterwards.</section>
+    <section></section>
 
 <%- include('partials/footer') %>
-
-                                                                                    
