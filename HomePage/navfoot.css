@@ -18,9 +18,9 @@
 		padding: 0 !important;
 	}	
 	.navbar {
-		position: -webkit-sticky;
+		/*position: -webkit-sticky;
 		position: sticky;
-		top:0;
+		top:0;*/
 		background: #fff;
 		padding-left: 16px;
 		padding-right: 16px;
