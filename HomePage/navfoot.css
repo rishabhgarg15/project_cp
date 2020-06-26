@@ -2,7 +2,8 @@
 
 	body{
 		font-family: 'Varela Round', sans-serif;
-		
+		background: -webkit-linear-gradient(140deg, #9eeaee 0.42%, #ffffff);
+	background: linear-gradient(140deg, #9eeaee 0.42%, #ffffff);  
 
 	}
 	.form-control {
